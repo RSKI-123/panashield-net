@@ -3,126 +3,113 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PanaShield</title>
+    <title>panashield | 窓用フィルムを中心とした日常用品ブランド</title>
     <meta
       name="description"
-      content="PanaShield official website. Full site content is being prepared."
+      content="panashieldは、窓用フィルムを中心とした日常用品ブランドです。住まいの快適さを支えるホーム用品をお届けします。"
     >
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #18212f;
-        --muted: #5b6676;
-        --line: #dce3ec;
-        --accent: #0f8f8c;
-        --bg: #f7f9fb;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        font-family:
-          "Inter",
-          "Segoe UI",
-          "Hiragino Kaku Gothic ProN",
-          "Yu Gothic",
-          Arial,
-          sans-serif;
-        color: var(--ink);
-        background:
-          linear-gradient(135deg, rgba(15, 143, 140, 0.08), transparent 45%),
-          var(--bg);
-      }
-
-      main {
-        display: grid;
-        min-height: 100vh;
-        place-items: center;
-        padding: 32px;
-      }
-
-      .panel {
-        width: min(100%, 760px);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.88);
-        padding: clamp(28px, 7vw, 72px);
-        box-shadow: 0 24px 80px rgba(24, 33, 47, 0.08);
-      }
-
-      .mark {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        color: var(--accent);
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .mark::before {
-        display: block;
-        width: 34px;
-        height: 4px;
-        border-radius: 999px;
-        background: currentColor;
-        content: "";
-      }
-
-      h1 {
-        margin: 22px 0 18px;
-        font-size: clamp(42px, 10vw, 92px);
-        font-weight: 800;
-        line-height: 0.95;
-        letter-spacing: 0;
-      }
-
-      p {
-        max-width: 620px;
-        margin: 0;
-        color: var(--muted);
-        font-size: clamp(17px, 2.4vw, 22px);
-        line-height: 1.7;
-      }
-
-      .status {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 34px;
-        padding-top: 24px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 14px;
-      }
-
-      .status span {
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        padding: 8px 12px;
-        background: #fff;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <main>
-      <section class="panel" aria-label="PanaShield website placeholder">
-        <div class="mark">Official Website</div>
-        <h1>PanaShield</h1>
-        <p>
-          PanaShield official website is being prepared. Product information,
-          company details, and contact options will be published here soon.
-        </p>
-        <div class="status" aria-label="site status">
-          <span>panashield.net</span>
-          <span>Content in preparation</span>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="panashield home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>panashield</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#products">商品</a>
+        <a href="#about">ブランド</a>
+        <a href="#company">会社情報</a>
+        <a href="mailto:rt03@panashield.net">お問い合わせ</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Window Film / Home Goods</p>
+          <h1>窓まわりから、毎日の暮らしを整える。</h1>
+          <p class="lead">
+            panashieldは、窓用フィルムを中心とした日常用品ブランドです。住まいに取り入れやすいホーム用品を通じて、快適で扱いやすい暮らしを支えます。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">商品を見る</a>
+            <a class="button secondary" href="mailto:rt03@panashield.net">メールで問い合わせる</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="窓用フィルム商品のイメージ">
+          <div class="window-frame">
+            <div class="film-layer"></div>
+            <div class="light-line line-one"></div>
+            <div class="light-line line-two"></div>
+          </div>
+          <div class="visual-note">
+            <span>main category</span>
+            <strong>Window Film</strong>
+          </div>
         </div>
       </section>
+
+      <section id="products" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>取扱商品</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-media" aria-hidden="true">
+              <span>Film</span>
+            </div>
+            <div class="product-content">
+              <p class="category">住まい・暮らし</p>
+              <h3>窓用フィルム</h3>
+              <p>
+                住宅や日常空間で使いやすい窓用フィルム商品を中心に展開しています。商品画像と詳しい仕様は準備ができ次第、順次掲載します。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section split">
+        <div>
+          <p class="eyebrow">About panashield</p>
+          <h2>日常に取り入れやすいホーム用品を。</h2>
+        </div>
+        <p>
+          panashieldは、窓用フィルムを主な商品とする日常用品ブランドです。暮らしの中で使いやすく、住空間になじむ商品情報をわかりやすく発信していきます。
+        </p>
+      </section>
+
+      <section id="company" class="section company-section">
+        <div class="section-heading">
+          <p class="eyebrow">Company</p>
+          <h2>会社情報</h2>
+        </div>
+        <dl class="company-list">
+          <div>
+            <dt>ブランド名</dt>
+            <dd>panashield</dd>
+          </div>
+          <div>
+            <dt>運営会社</dt>
+            <dd>ＳＹＤ株式会社</dd>
+          </div>
+          <div>
+            <dt>所在地</dt>
+            <dd>〒124-0023 東京都葛飾区東新小岩2丁目19-3 1F</dd>
+          </div>
+          <div>
+            <dt>お問い合わせ</dt>
+            <dd><a href="mailto:rt03@panashield.net">rt03@panashield.net</a></dd>
+          </div>
+        </dl>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span>&copy; panashield</span>
+      <a href="mailto:rt03@panashield.net">rt03@panashield.net</a>
+    </footer>
   </body>
 </html>
