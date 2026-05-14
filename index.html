@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PanaShield</title>
+    <meta
+      name="description"
+      content="PanaShield official website. Full site content is being prepared."
+    >
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #18212f;
+        --muted: #5b6676;
+        --line: #dce3ec;
+        --accent: #0f8f8c;
+        --bg: #f7f9fb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          "Inter",
+          "Segoe UI",
+          "Hiragino Kaku Gothic ProN",
+          "Yu Gothic",
+          Arial,
+          sans-serif;
+        color: var(--ink);
+        background:
+          linear-gradient(135deg, rgba(15, 143, 140, 0.08), transparent 45%),
+          var(--bg);
+      }
+
+      main {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        padding: 32px;
+      }
+
+      .panel {
+        width: min(100%, 760px);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.88);
+        padding: clamp(28px, 7vw, 72px);
+        box-shadow: 0 24px 80px rgba(24, 33, 47, 0.08);
+      }
+
+      .mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--accent);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .mark::before {
+        display: block;
+        width: 34px;
+        height: 4px;
+        border-radius: 999px;
+        background: currentColor;
+        content: "";
+      }
+
+      h1 {
+        margin: 22px 0 18px;
+        font-size: clamp(42px, 10vw, 92px);
+        font-weight: 800;
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      p {
+        max-width: 620px;
+        margin: 0;
+        color: var(--muted);
+        font-size: clamp(17px, 2.4vw, 22px);
+        line-height: 1.7;
+      }
+
+      .status {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 34px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .status span {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 12px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel" aria-label="PanaShield website placeholder">
+        <div class="mark">Official Website</div>
+        <h1>PanaShield</h1>
+        <p>
+          PanaShield official website is being prepared. Product information,
+          company details, and contact options will be published here soon.
+        </p>
+        <div class="status" aria-label="site status">
+          <span>panashield.net</span>
+          <span>Content in preparation</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
