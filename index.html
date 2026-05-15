@@ -17,7 +17,7 @@
     <div class="utility-bar" role="banner">
       <a href="#newsletter">新商品情報をメールで受け取る</a>
       <a href="#support">保証・サポートのご案内</a>
-      <span>RISUKAI 公式オンラインストア準備中</span>
+      <span>RISUKAI 公式オンラインストア</span>
     </div>
 
     <header class="site-header" data-header>
@@ -286,7 +286,7 @@
         <div>
           <p class="eyebrow">NEWSLETTER</p>
           <h2>新商品情報を受け取る</h2>
-          <p>あとでメール配信サービス、または楽天などの販売ページへの導線に差し替えできます。</p>
+          <p>新商品、再入荷、キャンペーン情報をRISUKAIからお知らせします。</p>
         </div>
         <form class="newsletter-form" data-newsletter>
           <label class="sr-only" for="newsletter-email">メールアドレス</label>
@@ -313,9 +313,53 @@
           <p class="dialog-price" data-dialog-price></p>
           <div class="variant-chips" data-dialog-variants></div>
           <dl class="spec-list" data-dialog-specs></dl>
-          <a class="button-link" href="#" target="_blank" rel="noopener" data-dialog-link>楽天で見る</a>
+          <form class="order-panel" data-order-form>
+            <label class="quantity-field">
+              <span>数量</span>
+              <input data-order-quantity name="quantity" type="number" min="1" value="1" inputmode="numeric">
+            </label>
+            <button class="button-link" type="submit">この商品を注文する</button>
+            <p class="form-status" data-order-status aria-live="polite"></p>
+          </form>
         </div>
       </div>
+    </dialog>
+
+    <dialog class="checkout-dialog" data-checkout-dialog aria-labelledby="checkout-dialog-title">
+      <form class="dialog-close-form" method="dialog">
+        <button class="dialog-close" type="submit" aria-label="閉じる">&times;</button>
+      </form>
+      <form class="checkout-form" data-checkout-form>
+        <div>
+          <p class="eyebrow">CHECKOUT</p>
+          <h2 id="checkout-dialog-title">ご注文内容</h2>
+        </div>
+        <div class="checkout-summary" data-checkout-summary></div>
+        <div class="checkout-fields">
+          <label>
+            <span>お名前</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>メールアドレス</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>電話番号</span>
+            <input name="tel" type="tel" autocomplete="tel" required>
+          </label>
+          <label class="checkout-field-wide">
+            <span>お届け先住所</span>
+            <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+          </label>
+          <label class="checkout-field-wide">
+            <span>備考</span>
+            <textarea name="note" rows="3"></textarea>
+          </label>
+        </div>
+        <button class="button-link" type="submit">注文内容を送信する</button>
+        <p class="form-status" data-checkout-status aria-live="polite"></p>
+      </form>
     </dialog>
 
     <footer id="support" class="site-footer">
@@ -324,7 +368,7 @@
           <span class="brand-mark" aria-hidden="true">R</span>
           <span class="brand-name">RISUKAI</span>
         </a>
-        <p>RISUKAI公式オンラインストアの準備用サイトです。</p>
+        <p>RISUKAI公式オンラインストアです。</p>
       </div>
 
       <div class="footer-columns">
