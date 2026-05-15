@@ -128,14 +128,14 @@ img {
 
 .brand-logo {
   width: auto;
-  height: 46px;
-  max-width: min(280px, 42vw);
+  height: 32px;
+  max-width: min(210px, 36vw);
   object-fit: contain;
 }
 
 .footer-brand .brand-logo {
-  height: 38px;
-  max-width: min(230px, 56vw);
+  height: 28px;
+  max-width: min(180px, 52vw);
 }
 
 .brand-mark {
@@ -1364,8 +1364,8 @@ h3 {
   }
 
   .brand-logo {
-    height: 36px;
-    max-width: 190px;
+    height: 28px;
+    max-width: 158px;
   }
 
   .site-nav {
