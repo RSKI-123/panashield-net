@@ -4,21 +4,19 @@ const newsletter = document.querySelector("[data-newsletter]");
 const statusNode = document.querySelector("[data-form-status]");
 const productGrid = document.querySelector("[data-product-grid]");
 const productCount = document.querySelector("[data-product-count]");
-const productDetail = document.querySelector("[data-product-detail]");
-const productMainImage = document.querySelector("[data-product-main-image]");
-const productThumbs = document.querySelector("[data-product-thumbs]");
-const productStore = document.querySelector("[data-product-store]");
-const productTitle = document.querySelector("[data-product-title]");
-const productTagline = document.querySelector("[data-product-tagline]");
-const productPrice = document.querySelector("[data-product-price]");
-const productVariants = document.querySelector("[data-product-variants]");
-const productQuantity = document.querySelector("[data-product-quantity]");
-const productSpecs = document.querySelector("[data-product-specs]");
-const productDescription = document.querySelector("[data-product-description]");
-const productFeatures = document.querySelector("[data-product-features]");
-const productStatus = document.querySelector("[data-product-status]");
-const addCartButton = document.querySelector("[data-add-cart]");
-const buyNowButton = document.querySelector("[data-buy-now]");
+const productDialog = document.querySelector("[data-product-dialog]");
+const dialogMainImage = document.querySelector("[data-dialog-main-image]");
+const dialogThumbs = document.querySelector("[data-dialog-thumbs]");
+const dialogCategory = document.querySelector("[data-dialog-category]");
+const dialogTitle = document.querySelector("[data-dialog-title]");
+const dialogTagline = document.querySelector("[data-dialog-tagline]");
+const dialogPrice = document.querySelector("[data-dialog-price]");
+const dialogVariants = document.querySelector("[data-dialog-variants]");
+const dialogSpecs = document.querySelector("[data-dialog-specs]");
+const orderForm = document.querySelector("[data-order-form]");
+const orderQuantity = document.querySelector("[data-order-quantity]");
+const orderStatus = document.querySelector("[data-order-status]");
+const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
@@ -32,6 +30,8 @@ const currencyFormatter = new Intl.NumberFormat("ja-JP", {
 let products = [];
 let activeProduct = null;
 let activeVariantIndex = 0;
+let activeQuantity = 1;
+let preserveProductHashOnClose = false;
 
 const escapeHtml = (value = "") =>
   String(value).replace(/[&<>"']/g, (character) => {
@@ -44,18 +44,6 @@ const escapeHtml = (value = "") =>
     };
     return entities[character];
   });
-
-const formatAmount = (amount = 0) => currencyFormatter.format(amount);
-
-const getProductImage = (product) => product.whiteBgImage || product.mainImage || product.images?.[0] || "";
-
-const getMainDetailImage = (product) => product.mainImage || getProductImage(product);
-
-const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
-
-const getQuantity = () => Math.max(1, Number(productQuantity?.value || 1));
-
-const getUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
 
 if (menuToggle && nav) {
   menuToggle.addEventListener("click", () => {
@@ -75,23 +63,31 @@ if (newsletter && statusNode) {
   newsletter.addEventListener("submit", (event) => {
     event.preventDefault();
     newsletter.reset();
-    statusNode.textContent = "登録ありがとうございます。新商品情報をお届けします。";
+    statusNode.textContent = "登録フォームは仮置きです。後でメール配信サービスに接続できます。";
   });
 }
 
-const renderProductCards = () => {
+const formatAmount = (amount = 0) => currencyFormatter.format(amount);
+
+const getProductImage = (product) => product.whiteBgImage || product.mainImage || product.images?.[0] || "";
+
+const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
+
+const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
+
+const renderProducts = () => {
   if (!productGrid) return;
 
   productGrid.innerHTML = products
-    .map((product) => {
+    .map((product, index) => {
       const image = getProductImage(product);
       const price = formatAmount(product.price || 0);
       const label = `${product.category || "商品"} / ${product.managementNumber || product.id}`;
-      const detailPath = product.detailPath || `product.html?product=${encodeURIComponent(product.id)}`;
+      const detailHash = `#product=${encodeURIComponent(product.id)}`;
 
       return `
         <article class="store-product-card">
-          <a class="store-product-button" href="${escapeHtml(detailPath)}">
+          <a class="store-product-button" href="${detailHash}" data-product-index="${index}">
             <span class="product-card-media">
               <img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}" loading="lazy">
             </span>
@@ -115,97 +111,73 @@ const renderProductCards = () => {
   }
 };
 
-const setDetailImage = (src, alt) => {
-  if (!productMainImage || !src) return;
-  productMainImage.src = src;
-  productMainImage.alt = alt;
-};
-
-const renderCheckoutSummary = () => {
-  if (!checkoutSummary || !activeProduct) return;
-
-  const variant = getSelectedVariant();
-  const quantity = getQuantity();
-  const unitPrice = getUnitPrice();
-
-  checkoutSummary.innerHTML = `
-    <div class="checkout-product-line">
-      <img src="${escapeHtml(variant?.image || getProductImage(activeProduct))}" alt="${escapeHtml(activeProduct.name)}">
-      <div>
-        <strong>${escapeHtml(activeProduct.name)}</strong>
-        <span>${escapeHtml(activeProduct.managementNumber || activeProduct.id)}</span>
-        <span>${escapeHtml(variant?.label || "標準")}</span>
-      </div>
-    </div>
-    <dl>
-      <div><dt>単価</dt><dd>${escapeHtml(formatAmount(unitPrice))}</dd></div>
-      <div><dt>数量</dt><dd>${escapeHtml(quantity)}</dd></div>
-      <div><dt>合計</dt><dd>${escapeHtml(formatAmount(unitPrice * quantity))}</dd></div>
-    </dl>
-  `;
+const setDialogImage = (src, alt) => {
+  if (!dialogMainImage || !src) return;
+  dialogMainImage.src = src;
+  dialogMainImage.alt = alt;
 };
 
 const updateVariantSelection = (variantIndex) => {
   activeVariantIndex = variantIndex;
-  const variant = getSelectedVariant();
+  const selectedVariant = getSelectedVariant();
 
-  productVariants?.querySelectorAll("[data-variant-index]").forEach((button) => {
+  if (selectedVariant?.image) {
+    setDialogImage(selectedVariant.image, selectedVariant.label || activeProduct?.name || "");
+  }
+
+  if (dialogPrice) {
+    dialogPrice.textContent = formatAmount(getCurrentUnitPrice());
+  }
+
+  dialogVariants?.querySelectorAll("[data-variant-index]").forEach((button) => {
     const isActive = Number(button.dataset.variantIndex) === activeVariantIndex;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
-
-  if (productPrice) {
-    productPrice.textContent = formatAmount(getUnitPrice());
-  }
-
-  if (variant?.image) {
-    setDetailImage(variant.image, `${activeProduct.name} ${variant.label}`);
-  }
-
-  renderCheckoutSummary();
 };
 
-const renderProductPage = () => {
-  if (!productDetail) return;
+const openProductDialog = (product, updateHash = true) => {
+  if (!productDialog || !dialogTitle) return;
 
-  const params = new URLSearchParams(window.location.search);
-  const productId = params.get("product") || window.location.hash.replace("#product=", "") || products[0]?.id;
-  activeProduct = products.find((product) => product.id === productId || product.managementNumber === productId);
+  activeProduct = product;
+  activeVariantIndex = 0;
+  activeQuantity = 1;
+  if (orderQuantity) orderQuantity.value = "1";
+  if (orderStatus) orderStatus.textContent = "";
 
-  if (!activeProduct) {
-    productDetail.innerHTML = "<p>商品が見つかりませんでした。</p>";
-    return;
+  const images = [getProductImage(product), ...(product.images || [])].filter(Boolean);
+  const uniqueImages = [...new Set(images)];
+
+  if (dialogCategory) {
+    dialogCategory.textContent = `${product.storeName || "RISUKAI"} / ${product.managementNumber || product.id}`;
   }
 
-  activeVariantIndex = 0;
-  document.title = `${activeProduct.name} | RISUKAI`;
+  dialogTitle.textContent = product.name;
 
-  const galleryImages = [getMainDetailImage(activeProduct), getProductImage(activeProduct), ...(activeProduct.images || [])]
-    .filter(Boolean);
-  const uniqueImages = [...new Set(galleryImages)];
+  if (dialogTagline) {
+    dialogTagline.textContent = product.tagline || "";
+  }
 
-  setDetailImage(uniqueImages[0], activeProduct.name);
+  if (dialogPrice) {
+    dialogPrice.textContent = formatAmount(product.price || 0);
+  }
 
-  if (productThumbs) {
-    productThumbs.innerHTML = uniqueImages
+  setDialogImage(uniqueImages[0], product.name);
+
+  if (dialogThumbs) {
+    dialogThumbs.innerHTML = uniqueImages
       .map(
         (image, index) => `
-          <button class="${index === 0 ? "is-active" : ""}" type="button" data-detail-thumb="${escapeHtml(image)}">
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${activeProduct.name} ${index + 1}`)}" loading="eager">
+          <button class="${index === 0 ? "is-active" : ""}" type="button" data-thumb-src="${escapeHtml(image)}">
+            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="eager">
           </button>
         `,
       )
       .join("");
   }
 
-  if (productStore) productStore.textContent = activeProduct.storeName || "RISUKAI";
-  if (productTitle) productTitle.textContent = activeProduct.name;
-  if (productTagline) productTagline.textContent = activeProduct.tagline || "";
-  if (productPrice) productPrice.textContent = formatAmount(activeProduct.price || 0);
-
-  if (productVariants) {
-    productVariants.innerHTML = (activeProduct.variants || [])
+  if (dialogVariants) {
+    dialogVariants.innerHTML = (product.variants || [])
       .map(
         (variant, index) => `
           <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
@@ -217,8 +189,8 @@ const renderProductPage = () => {
       .join("");
   }
 
-  if (productSpecs) {
-    productSpecs.innerHTML = (activeProduct.specs || [])
+  if (dialogSpecs) {
+    dialogSpecs.innerHTML = (product.specs || [])
       .map(
         (spec) => `
           <div>
@@ -230,83 +202,135 @@ const renderProductPage = () => {
       .join("");
   }
 
-  if (productDescription) {
-    productDescription.innerHTML = (activeProduct.description || [])
-      .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
-      .join("");
+  updateVariantSelection(0);
+
+  if (updateHash) {
+    window.history.pushState(null, "", `#product=${encodeURIComponent(product.id)}`);
   }
 
-  if (productFeatures) {
-    productFeatures.innerHTML = (activeProduct.features || [])
-      .map((feature) => `<li>${escapeHtml(feature)}</li>`)
-      .join("");
+  if (!productDialog.open) {
+    productDialog.showModal();
   }
-
-  renderCheckoutSummary();
 };
 
-productThumbs?.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-detail-thumb]");
-  if (!button || !activeProduct) return;
+const openProductFromHash = () => {
+  if (!location.hash.startsWith("#product=") || products.length === 0) return;
 
-  setDetailImage(button.dataset.detailThumb, activeProduct.name);
-  productThumbs.querySelectorAll("button").forEach((thumb) => thumb.classList.toggle("is-active", thumb === button));
+  const productId = decodeURIComponent(location.hash.replace("#product=", ""));
+  const product = products.find((item) => item.id === productId || item.managementNumber === productId);
+  if (product) {
+    openProductDialog(product, false);
+  }
+};
+
+const renderCheckoutSummary = () => {
+  if (!checkoutSummary || !activeProduct) return;
+
+  const selectedVariant = getSelectedVariant();
+  const unitPrice = getCurrentUnitPrice();
+  const total = unitPrice * activeQuantity;
+
+  checkoutSummary.innerHTML = `
+    <div class="checkout-product-line">
+      <img src="${escapeHtml(selectedVariant?.image || getProductImage(activeProduct))}" alt="${escapeHtml(activeProduct.name)}">
+      <div>
+        <strong>${escapeHtml(activeProduct.name)}</strong>
+        <span>${escapeHtml(activeProduct.managementNumber || activeProduct.id)}</span>
+        <span>${escapeHtml(selectedVariant?.label || "標準")}</span>
+      </div>
+    </div>
+    <dl>
+      <div><dt>単価</dt><dd>${escapeHtml(formatAmount(unitPrice))}</dd></div>
+      <div><dt>数量</dt><dd>${escapeHtml(activeQuantity)}</dd></div>
+      <div><dt>合計</dt><dd>${escapeHtml(formatAmount(total))}</dd></div>
+    </dl>
+  `;
+};
+
+productGrid?.addEventListener("click", (event) => {
+  const link = event.target.closest("[data-product-index]");
+  if (!link) return;
+
+  event.preventDefault();
+  const product = products[Number(link.dataset.productIndex)];
+  if (product) {
+    openProductDialog(product);
+  }
 });
 
-productVariants?.addEventListener("click", (event) => {
+dialogThumbs?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-thumb-src]");
+  if (!button || !dialogMainImage) return;
+
+  setDialogImage(button.dataset.thumbSrc, dialogMainImage.alt);
+  dialogThumbs.querySelectorAll("button").forEach((thumb) => thumb.classList.toggle("is-active", thumb === button));
+});
+
+dialogVariants?.addEventListener("click", (event) => {
   const button = event.target.closest("[data-variant-index]");
   if (!button) return;
 
   updateVariantSelection(Number(button.dataset.variantIndex));
 });
 
-document.querySelectorAll("[data-quantity-action]").forEach((button) => {
-  button.addEventListener("click", () => {
-    if (!productQuantity) return;
-    const delta = button.dataset.quantityAction === "plus" ? 1 : -1;
-    productQuantity.value = String(Math.max(1, getQuantity() + delta));
-    renderCheckoutSummary();
-  });
+productDialog?.addEventListener("click", (event) => {
+  if (event.target === productDialog) {
+    productDialog.close();
+  }
 });
 
-productQuantity?.addEventListener("input", renderCheckoutSummary);
+productDialog?.addEventListener("close", () => {
+  if (preserveProductHashOnClose) {
+    preserveProductHashOnClose = false;
+    return;
+  }
 
-addCartButton?.addEventListener("click", () => {
-  if (!activeProduct || !productStatus) return;
-
-  const variant = getSelectedVariant();
-  const cartItem = {
-    productId: activeProduct.id,
-    managementNumber: activeProduct.managementNumber,
-    variantSku: variant?.sku || "",
-    variantLabel: variant?.label || "",
-    quantity: getQuantity(),
-    unitPrice: getUnitPrice(),
-  };
-
-  localStorage.setItem("risukaiCartItem", JSON.stringify(cartItem));
-  productStatus.textContent = "カートに追加しました。下の注文フォームから続けて入力できます。";
+  if (location.hash.startsWith("#product=")) {
+    window.history.replaceState(null, "", "#products");
+  }
 });
 
-buyNowButton?.addEventListener("click", () => {
-  document.querySelector("#order")?.scrollIntoView({ behavior: "smooth", block: "start" });
+orderForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (!activeProduct) return;
+
+  activeQuantity = Math.max(1, Number(orderQuantity?.value || 1));
+  renderCheckoutSummary();
+  if (checkoutStatus) checkoutStatus.textContent = "";
+
+  preserveProductHashOnClose = true;
+  productDialog?.close();
+  checkoutDialog?.showModal();
+});
+
+checkoutDialog?.addEventListener("click", (event) => {
+  if (event.target === checkoutDialog) {
+    checkoutDialog.close();
+  }
+});
+
+checkoutDialog?.addEventListener("close", () => {
+  if (location.hash.startsWith("#product=")) {
+    window.history.replaceState(null, "", "#products");
+  }
 });
 
 checkoutForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!activeProduct || !checkoutStatus) return;
 
-  const variant = getSelectedVariant();
+  const formData = new FormData(checkoutForm);
+  const selectedVariant = getSelectedVariant();
   const orderDraft = {
     createdAt: new Date().toISOString(),
     productId: activeProduct.id,
     managementNumber: activeProduct.managementNumber,
-    variantSku: variant?.sku || "",
-    variantLabel: variant?.label || "",
-    quantity: getQuantity(),
-    unitPrice: getUnitPrice(),
-    total: getUnitPrice() * getQuantity(),
-    customer: Object.fromEntries(new FormData(checkoutForm).entries()),
+    variantSku: selectedVariant?.sku || "",
+    variantLabel: selectedVariant?.label || "",
+    quantity: activeQuantity,
+    unitPrice: getCurrentUnitPrice(),
+    total: getCurrentUnitPrice() * activeQuantity,
+    customer: Object.fromEntries(formData.entries()),
   };
 
   try {
@@ -331,26 +355,27 @@ checkoutForm?.addEventListener("submit", async (event) => {
   }
 });
 
+window.addEventListener("hashchange", openProductFromHash);
+
 const loadProducts = async () => {
+  if (!productGrid) return;
+
   try {
     const response = await fetch("assets/data/products.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Product data request failed: ${response.status}`);
     const data = await response.json();
     products = Array.isArray(data.products) ? data.products : [];
-    renderProductCards();
-    renderProductPage();
+    renderProducts();
+    openProductFromHash();
   } catch (error) {
-    if (productGrid) {
-      productGrid.innerHTML = `
-        <article class="store-product-card product-skeleton">
-          <div class="store-product-copy">
-            <p class="meta">ERROR</p>
-            <h3>商品データを表示できませんでした</h3>
-          </div>
-        </article>
-      `;
-    }
-
+    productGrid.innerHTML = `
+      <article class="store-product-card product-skeleton">
+        <div class="store-product-copy">
+          <p class="meta">ERROR</p>
+          <h3>商品データを表示できませんでした</h3>
+        </div>
+      </article>
+    `;
     if (productCount) productCount.textContent = "0 商品";
     console.error(error);
   }

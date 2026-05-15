@@ -297,6 +297,71 @@
       </section>
     </main>
 
+    <dialog class="product-dialog" data-product-dialog aria-labelledby="product-dialog-title">
+      <form class="dialog-close-form" method="dialog">
+        <button class="dialog-close" type="submit" aria-label="閉じる">&times;</button>
+      </form>
+      <div class="dialog-grid">
+        <div class="dialog-media">
+          <img src="" alt="" data-dialog-main-image>
+          <div class="dialog-thumbs" data-dialog-thumbs aria-label="商品画像"></div>
+        </div>
+        <div class="dialog-copy">
+          <p class="meta" data-dialog-category></p>
+          <h2 id="product-dialog-title" data-dialog-title></h2>
+          <p class="dialog-tagline" data-dialog-tagline></p>
+          <p class="dialog-price" data-dialog-price></p>
+          <div class="variant-chips" data-dialog-variants></div>
+          <dl class="spec-list" data-dialog-specs></dl>
+          <form class="order-panel" data-order-form>
+            <label class="quantity-field">
+              <span>数量</span>
+              <input data-order-quantity name="quantity" type="number" min="1" value="1" inputmode="numeric">
+            </label>
+            <button class="button-link" type="submit">この商品を注文する</button>
+            <p class="form-status" data-order-status aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="checkout-dialog" data-checkout-dialog aria-labelledby="checkout-dialog-title">
+      <form class="dialog-close-form" method="dialog">
+        <button class="dialog-close" type="submit" aria-label="閉じる">&times;</button>
+      </form>
+      <form class="checkout-form" data-checkout-form>
+        <div>
+          <p class="eyebrow">CHECKOUT</p>
+          <h2 id="checkout-dialog-title">ご注文内容</h2>
+        </div>
+        <div class="checkout-summary" data-checkout-summary></div>
+        <div class="checkout-fields">
+          <label>
+            <span>お名前</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>メールアドレス</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>電話番号</span>
+            <input name="tel" type="tel" autocomplete="tel" required>
+          </label>
+          <label class="checkout-field-wide">
+            <span>お届け先住所</span>
+            <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+          </label>
+          <label class="checkout-field-wide">
+            <span>備考</span>
+            <textarea name="note" rows="3"></textarea>
+          </label>
+        </div>
+        <button class="button-link" type="submit">注文内容を送信する</button>
+        <p class="form-status" data-checkout-status aria-live="polite"></p>
+      </form>
+    </dialog>
+
     <footer id="support" class="site-footer">
       <div>
         <a class="brand footer-brand" href="#top">

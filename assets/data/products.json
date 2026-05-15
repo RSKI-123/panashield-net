@@ -13,21 +13,9 @@
       "currency": "JPY",
       "availability": "在庫あり",
       "category": "車載ホルダー",
-      "detailPath": "product.html?product=m22-a01",
-      "orderPath": "product.html?product=m22-a01#order",
+      "orderPath": "#product=m22-a01",
       "whiteBgImage": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/bdt/2.jpg",
       "mainImage": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/top/2.jpg",
-      "description": [
-        "真空吸着でしっかり固定できる、MagSafe対応の車載スマホホルダーです。",
-        "折りたたみ式で角度調整がしやすく、車内だけでなくデスクまわりでも使いやすい設計です。",
-        "付属メタルプレートを併用すれば、MagSafe非対応のAndroid端末にも使用できます。"
-      ],
-      "features": [
-        "真空吸着で跡が残りにくい固定方式",
-        "360度回転と折りたたみで角度調整しやすい構造",
-        "最大15Wのワイヤレス充電に対応",
-        "ブラックとオレンジの2カラー展開"
-      ],
       "images": [
         "https://image.rakuten.co.jp/lukurasu/cabinet/m22/top/2.jpg",
         "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/1.jpg",
