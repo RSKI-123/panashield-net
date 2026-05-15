@@ -1,0 +1,81 @@
+{
+  "updatedAt": "2026-05-15T17:00:00+09:00",
+  "source": "rakuten_itemapi_2",
+  "products": [
+    {
+      "id": "m22-a01",
+      "managementNumber": "m22-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "真空吸着式 MagSafe対応 車載スマホホルダー",
+      "rakutenTitle": "★繰り返し使える真空吸着!★スマホ スタンド 軽量 持ち運び Iphone 充電器 スタンド Magsafe 車載ホルダー ワイヤレス 携帯 スタンド 折りたたみ 携帯電話 車 ホルダー タブレット 車 マグネット 充電 ダッシュボード 360度回転 ホルダー 吸着 スマホ 車載 ホルダー 携帯",
+      "tagline": "真空で吸いつく安定感。MagSafe対応モデルにおすすめの車載スマホホルダー。",
+      "price": 3880,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "車載ホルダー",
+      "productUrl": "https://item.rakuten.co.jp/lukurasu/m22-a01/",
+      "whiteBgImage": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/bdt/2.jpg",
+      "mainImage": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/top/2.jpg",
+      "images": [
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/top/2.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/1.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/2.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/3.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/4.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/5.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/6.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/7.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/8.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/9.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/10.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/11.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/12.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/13.jpg",
+        "https://image.rakuten.co.jp/lukurasu/cabinet/m22/qietu/14.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "m22-black",
+          "label": "ブラック",
+          "image": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/bdt/2.jpg",
+          "price": 3880,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "m22-orange",
+          "label": "オレンジ",
+          "image": "https://image.rakuten.co.jp/lukurasu/cabinet/m22/bdt/1.jpg",
+          "price": 3880,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "サイズ",
+          "value": "約139 × 62.8 × 38mm"
+        },
+        {
+          "label": "重量",
+          "value": "約144g"
+        },
+        {
+          "label": "素材",
+          "value": "ABS＋亜鉛合金＋PC＋シリコン"
+        },
+        {
+          "label": "入力電圧",
+          "value": "5V/2A・9V/2A・12V/2A"
+        },
+        {
+          "label": "出力",
+          "value": "5W / 7.5W / 10W / 15W（最大）"
+        },
+        {
+          "label": "対応機種",
+          "value": "MagSafe対応iPhone 12〜17推奨 / Androidは付属メタルプレート併用"
+        }
+      ]
+    }
+  ]
+}
