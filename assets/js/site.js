@@ -20,6 +20,7 @@ const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
+const VARIANT_CHIP_LIMIT = 36;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
   style: "currency",
@@ -74,6 +75,8 @@ const getProductImage = (product) => product.whiteBgImage || product.mainImage |
 const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
 
 const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
+
+const variantDisplayLabel = (variant = {}) => variant.label || variant.merchantSku || variant.sku || "SKU";
 
 const renderProducts = () => {
   if (!productGrid) return;
@@ -134,6 +137,11 @@ const updateVariantSelection = (variantIndex) => {
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-pressed", String(isActive));
   });
+
+  const select = dialogVariants?.querySelector("[data-variant-select]");
+  if (select && Number(select.value) !== activeVariantIndex) {
+    select.value = String(activeVariantIndex);
+  }
 };
 
 const openProductDialog = (product, updateHash = true) => {
@@ -153,6 +161,7 @@ const openProductDialog = (product, updateHash = true) => {
   }
 
   dialogTitle.textContent = product.name;
+  dialogTitle.classList.toggle("is-long-title", product.name.length > 60);
 
   if (dialogTagline) {
     dialogTagline.textContent = product.tagline || "";
@@ -177,16 +186,33 @@ const openProductDialog = (product, updateHash = true) => {
   }
 
   if (dialogVariants) {
-    dialogVariants.innerHTML = (product.variants || [])
-      .map(
-        (variant, index) => `
-          <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
-            <img src="${escapeHtml(variant.image)}" alt="${escapeHtml(variant.label)}" loading="eager">
-            <span>${escapeHtml(variant.label)}</span>
-          </button>
-        `,
-      )
-      .join("");
+    const variants = product.variants || [];
+    dialogVariants.classList.toggle("variant-chips-compact", variants.length > VARIANT_CHIP_LIMIT);
+    dialogVariants.innerHTML =
+      variants.length > VARIANT_CHIP_LIMIT
+        ? `
+          <label class="variant-select-field">
+            <span>SKU / ${escapeHtml(variants.length)} 種</span>
+            <select data-variant-select>
+              ${variants
+                .map((variant, index) => {
+                  const label = `${variantDisplayLabel(variant)} / ${formatAmount(variant.price || product.price || 0)}`;
+                  return `<option value="${index}">${escapeHtml(label)}</option>`;
+                })
+                .join("")}
+            </select>
+          </label>
+        `
+        : variants
+            .map(
+              (variant, index) => `
+                <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
+                  <img src="${escapeHtml(variant.image)}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="eager">
+                  <span>${escapeHtml(variantDisplayLabel(variant))}</span>
+                </button>
+              `,
+            )
+            .join("");
   }
 
   if (dialogSpecs) {
@@ -273,6 +299,13 @@ dialogVariants?.addEventListener("click", (event) => {
   updateVariantSelection(Number(button.dataset.variantIndex));
 });
 
+dialogVariants?.addEventListener("change", (event) => {
+  const select = event.target.closest("[data-variant-select]");
+  if (!select) return;
+
+  updateVariantSelection(Number(select.value));
+});
+
 productDialog?.addEventListener("click", (event) => {
   if (event.target === productDialog) {
     productDialog.close();
@@ -326,7 +359,8 @@ checkoutForm?.addEventListener("submit", async (event) => {
     productId: activeProduct.id,
     managementNumber: activeProduct.managementNumber,
     variantSku: selectedVariant?.sku || "",
-    variantLabel: selectedVariant?.label || "",
+    variantMerchantSku: selectedVariant?.merchantSku || "",
+    variantLabel: variantDisplayLabel(selectedVariant || {}),
     quantity: activeQuantity,
     unitPrice: getCurrentUnitPrice(),
     total: getCurrentUnitPrice() * activeQuantity,

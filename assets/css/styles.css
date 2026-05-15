@@ -603,9 +603,13 @@ h3 {
 }
 
 .store-product-copy strong {
+  display: -webkit-box;
   min-height: 48px;
+  overflow: hidden;
   font-size: 17px;
   line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .store-product-tagline {
@@ -639,6 +643,7 @@ h3 {
 .product-dialog {
   width: min(1120px, calc(100vw - 28px));
   max-height: calc(100vh - 28px);
+  overflow-x: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 0;
@@ -703,6 +708,7 @@ h3 {
 
 .dialog-media > img {
   width: 100%;
+  min-width: 0;
   aspect-ratio: 1 / 1;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -750,6 +756,11 @@ h3 {
 .dialog-copy h2 {
   margin: 0;
   font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.16;
+}
+
+.dialog-copy h2.is-long-title {
+  font-size: clamp(22px, 2.3vw, 30px);
 }
 
 .dialog-tagline {
@@ -767,6 +778,29 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.variant-chips-compact {
+  display: block;
+}
+
+.variant-select-field {
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.variant-select-field select {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: #ffffff;
+  font-weight: 750;
 }
 
 .variant-chip {
