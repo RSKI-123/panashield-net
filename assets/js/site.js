@@ -70,7 +70,11 @@ if (newsletter && statusNode) {
 
 const formatAmount = (amount = 0) => currencyFormatter.format(amount);
 
-const getProductImage = (product) => product.whiteBgImage || product.mainImage || product.images?.[0] || "";
+const getProductImage = (product) => product.mainImage || product.images?.[0] || product.whiteBgImage || "";
+
+const getBackupProductImage = (product) => (product.images || []).find((image) => image && image !== getProductImage(product)) || product.whiteBgImage || "";
+
+const getVariantImage = (variant = {}, product = activeProduct) => variant.image || getProductImage(product);
 
 const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
 
@@ -92,7 +96,7 @@ const renderProducts = () => {
         <article class="store-product-card">
           <a class="store-product-button" href="${detailHash}" data-product-index="${index}">
             <span class="product-card-media">
-              <img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}" loading="lazy">
+              <img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}" loading="lazy" data-fallback-src="${escapeHtml(getBackupProductImage(product))}">
             </span>
             <span class="store-product-copy">
               <span class="meta">${escapeHtml(label)}</span>
@@ -120,12 +124,12 @@ const setDialogImage = (src, alt) => {
   dialogMainImage.alt = alt;
 };
 
-const updateVariantSelection = (variantIndex) => {
+const updateVariantSelection = (variantIndex, updateImage = true) => {
   activeVariantIndex = variantIndex;
   const selectedVariant = getSelectedVariant();
 
-  if (selectedVariant?.image) {
-    setDialogImage(selectedVariant.image, selectedVariant.label || activeProduct?.name || "");
+  if (updateImage && activeProduct) {
+    setDialogImage(getVariantImage(selectedVariant, activeProduct), selectedVariant?.label || activeProduct.name || "");
   }
 
   if (dialogPrice) {
@@ -178,7 +182,7 @@ const openProductDialog = (product, updateHash = true) => {
       .map(
         (image, index) => `
           <button class="${index === 0 ? "is-active" : ""}" type="button" data-thumb-src="${escapeHtml(image)}">
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="eager">
+            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="eager" data-fallback-src="${escapeHtml(getProductImage(product))}">
           </button>
         `,
       )
@@ -207,7 +211,7 @@ const openProductDialog = (product, updateHash = true) => {
             .map(
               (variant, index) => `
                 <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
-                  <img src="${escapeHtml(variant.image)}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="eager">
+                  <img src="${escapeHtml(getVariantImage(variant, product))}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="eager" data-fallback-src="${escapeHtml(getProductImage(product))}">
                   <span>${escapeHtml(variantDisplayLabel(variant))}</span>
                 </button>
               `,
@@ -228,7 +232,7 @@ const openProductDialog = (product, updateHash = true) => {
       .join("");
   }
 
-  updateVariantSelection(0);
+  updateVariantSelection(0, false);
 
   if (updateHash) {
     window.history.pushState(null, "", `#product=${encodeURIComponent(product.id)}`);
@@ -305,6 +309,30 @@ dialogVariants?.addEventListener("change", (event) => {
 
   updateVariantSelection(Number(select.value));
 });
+
+document.addEventListener(
+  "error",
+  (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement)) return;
+
+    const fallback = image.dataset.fallbackSrc || "";
+    if (fallback && image.src !== fallback) {
+      image.src = fallback;
+      image.removeAttribute("data-fallback-src");
+      return;
+    }
+
+    if (image === dialogMainImage && activeProduct) {
+      const currentIndex = dialogThumbs ? [...dialogThumbs.querySelectorAll("[data-thumb-src]")].findIndex((button) => button.dataset.thumbSrc === image.getAttribute("src")) : -1;
+      const fallbackImage = (activeProduct.images || []).find((src, index) => index > currentIndex && src) || getProductImage(activeProduct);
+      if (fallbackImage && image.src !== fallbackImage) {
+        image.src = fallbackImage;
+      }
+    }
+  },
+  true,
+);
 
 productDialog?.addEventListener("click", (event) => {
   if (event.target === productDialog) {
