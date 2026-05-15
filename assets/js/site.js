@@ -78,6 +78,11 @@ const getVariantImage = (variant = {}, product = activeProduct) => variant.image
 
 const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
 
+const applyFallbackBackground = (node, src) => {
+  if (!node || !src) return;
+  node.style.backgroundImage = `url("${src.replace(/"/g, "%22")}")`;
+};
+
 const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
 
 const variantDisplayLabel = (variant = {}) => variant.label || variant.merchantSku || variant.sku || "SKU";
@@ -187,6 +192,7 @@ const openProductDialog = (product, updateHash = true) => {
         `,
       )
       .join("");
+    dialogThumbs.querySelectorAll("button").forEach((button) => applyFallbackBackground(button, getProductImage(product)));
   }
 
   if (dialogVariants) {

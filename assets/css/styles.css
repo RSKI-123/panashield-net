@@ -696,20 +696,24 @@ h3 {
 .dialog-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.8fr);
+  align-items: start;
   gap: clamp(22px, 4vw, 44px);
   padding: 0 clamp(18px, 4vw, 44px) clamp(22px, 4vw, 44px);
 }
 
 .dialog-media {
   display: grid;
+  align-content: start;
   gap: 12px;
   min-width: 0;
 }
 
 .dialog-media > img {
+  display: block;
   width: 100%;
+  height: auto;
+  max-height: min(62vh, 620px);
   min-width: 0;
-  aspect-ratio: 1 / 1;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #f7f4f0;
@@ -719,6 +723,7 @@ h3 {
 
 .dialog-thumbs {
   display: flex;
+  align-items: flex-start;
   gap: 8px;
   overflow-x: auto;
   padding-bottom: 4px;
@@ -726,14 +731,17 @@ h3 {
 }
 
 .dialog-thumbs button {
-  aspect-ratio: 1 / 1;
-  width: 82px;
-  flex: 0 0 82px;
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 3px;
   cursor: pointer;
-  background: #ffffff;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .dialog-thumbs button.is-active {
