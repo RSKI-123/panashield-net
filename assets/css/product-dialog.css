@@ -1,0 +1,31 @@
+.dialog-grid {
+  align-items: start;
+}
+
+.dialog-media {
+  align-content: start;
+}
+
+.dialog-media > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: min(62vh, 620px);
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.dialog-thumbs {
+  align-items: flex-start;
+}
+
+.dialog-thumbs button {
+  width: 76px;
+  height: 76px;
+  flex: 0 0 76px;
+  aspect-ratio: auto;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
