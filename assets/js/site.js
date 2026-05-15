@@ -21,6 +21,6 @@ if (newsletter && statusNode) {
   newsletter.addEventListener("submit", (event) => {
     event.preventDefault();
     newsletter.reset();
-    statusNode.textContent = "Form placeholder ready. Connect your email service later.";
+    statusNode.textContent = "登録フォームは仮置きです。後でメール配信サービスに接続できます。";
   });
 }
