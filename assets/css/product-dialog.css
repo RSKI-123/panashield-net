@@ -13,6 +13,9 @@
   max-height: min(62vh, 620px);
   aspect-ratio: auto;
   object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .dialog-thumbs {
@@ -28,4 +31,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.dialog-thumbs button[hidden] {
+  display: none;
 }

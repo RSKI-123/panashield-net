@@ -21,7 +21,7 @@ const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const VARIANT_CHIP_LIMIT = 36;
-const PRODUCTS_DATA_VERSION = "20260516042431";
+const PRODUCTS_DATA_VERSION = "20260516162958";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
@@ -35,6 +35,7 @@ let activeProduct = null;
 let activeVariantIndex = 0;
 let activeQuantity = 1;
 let preserveProductHashOnClose = false;
+let dialogImageLoadTimer = null;
 
 const escapeHtml = (value = "") =>
   String(value).replace(/[&<>"']/g, (character) => {
@@ -80,6 +81,12 @@ const getVariantImage = (variant = {}, product = activeProduct) => variant.image
 
 const getSelectedVariant = () => activeProduct?.variants?.[activeVariantIndex] || null;
 
+const getSizedImage = (src = "", size = 300) => {
+  if (!src || !src.includes("image.rakuten.co.jp/")) return src;
+  const separator = src.includes("?") ? "&" : "?";
+  return `${src}${separator}_ex=${size}x${size}`;
+};
+
 const applyFallbackBackground = (node, src) => {
   if (!node || !src) return;
   node.style.backgroundImage = `url("${src.replace(/"/g, "%22")}")`;
@@ -103,7 +110,7 @@ const renderProducts = () => {
         <article class="store-product-card">
           <a class="store-product-button" href="${detailHash}" data-product-index="${index}">
             <span class="product-card-media">
-              <img src="${escapeHtml(image)}" alt="${escapeHtml(product.name)}" loading="lazy" data-fallback-src="${escapeHtml(getBackupProductImage(product))}">
+              <img src="${escapeHtml(getSizedImage(image, 420))}" alt="${escapeHtml(product.name)}" loading="lazy" data-fallback-src="${escapeHtml(getSizedImage(getBackupProductImage(product), 420))}">
             </span>
             <span class="store-product-copy">
               <span class="meta">${escapeHtml(label)}</span>
@@ -127,8 +134,20 @@ const renderProducts = () => {
 
 const setDialogImage = (src, alt) => {
   if (!dialogMainImage || !src) return;
+  window.clearTimeout(dialogImageLoadTimer);
+  dialogMainImage.classList.add("is-loading");
+  dialogMainImage.dataset.requestSrc = src;
+  applyFallbackBackground(dialogMainImage, getSizedImage(src, 480));
   dialogMainImage.src = src;
   dialogMainImage.alt = alt;
+
+  dialogImageLoadTimer = window.setTimeout(() => {
+    if (!activeProduct || dialogMainImage.dataset.requestSrc !== src || (dialogMainImage.complete && dialogMainImage.naturalWidth > 0)) return;
+    const images = [...new Set([getProductImage(activeProduct), ...(activeProduct.images || [])].filter(Boolean))];
+    const currentIndex = images.indexOf(src);
+    const fallbackImage = images.find((image, index) => index > currentIndex && image !== src);
+    if (fallbackImage) setDialogImage(fallbackImage, alt);
+  }, 8000);
 };
 
 const updateVariantSelection = (variantIndex, updateImage = true) => {
@@ -187,11 +206,14 @@ const openProductDialog = (product, updateHash = true) => {
   if (dialogThumbs) {
     dialogThumbs.innerHTML = uniqueImages
       .map(
-        (image, index) => `
+        (image, index) => {
+          const thumbSrc = getSizedImage(image, 300);
+          return `
           <button class="${index === 0 ? "is-active" : ""}" type="button" data-thumb-src="${escapeHtml(image)}">
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="lazy" decoding="async" fetchpriority="low" width="76" height="76" data-fallback-src="${escapeHtml(getProductImage(product))}">
+            <img src="${escapeHtml(thumbSrc)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="${index < 8 ? "eager" : "lazy"}" decoding="async" fetchpriority="${index < 3 ? "high" : "low"}" width="76" height="76" data-fallback-src="${escapeHtml(getSizedImage(getProductImage(product), 300))}">
           </button>
-        `,
+        `;
+        },
       )
       .join("");
     dialogThumbs.querySelectorAll("button").forEach((button) => applyFallbackBackground(button, getProductImage(product)));
@@ -319,6 +341,22 @@ dialogVariants?.addEventListener("change", (event) => {
 });
 
 document.addEventListener(
+  "load",
+  (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement)) return;
+
+    image.closest("[data-thumb-src]")?.classList.add("is-loaded");
+
+    if (image === dialogMainImage) {
+      window.clearTimeout(dialogImageLoadTimer);
+      dialogMainImage.classList.remove("is-loading");
+    }
+  },
+  true,
+);
+
+document.addEventListener(
   "error",
   (event) => {
     const image = event.target;
@@ -328,6 +366,12 @@ document.addEventListener(
     if (fallback && image.src !== fallback) {
       image.src = fallback;
       image.removeAttribute("data-fallback-src");
+      return;
+    }
+
+    const thumbButton = image.closest("[data-thumb-src]");
+    if (thumbButton) {
+      thumbButton.hidden = true;
       return;
     }
 
