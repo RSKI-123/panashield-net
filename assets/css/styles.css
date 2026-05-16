@@ -575,6 +575,17 @@ h3 {
   font-weight: 900;
 }
 
+.product-more-link {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.product-more-link::after {
+  margin-left: 8px;
+  color: var(--accent);
+  content: ">";
+}
+
 .catalog-toolbar {
   display: flex;
   flex-wrap: wrap;

@@ -119,8 +119,12 @@ const updateCatalogVisibility = (scrollToCatalog = false) => {
 const renderProducts = () => {
   if (!productGrid) return;
 
-  productGrid.innerHTML = products
+  const productLimit = Number(productGrid.dataset.productLimit || 0);
+  const visibleProducts = productLimit > 0 ? products.slice(0, productLimit) : products;
+
+  productGrid.innerHTML = visibleProducts
     .map((product, index) => {
+      const productIndex = productLimit > 0 ? index : products.indexOf(product);
       const image = getProductImage(product);
       const price = formatAmount(product.price || 0);
       const label = `${product.category || "商品"} / ${product.managementNumber || product.id}`;
@@ -128,7 +132,7 @@ const renderProducts = () => {
 
       return `
         <article class="store-product-card">
-          <a class="store-product-button" href="${detailHash}" data-product-index="${index}">
+          <a class="store-product-button" href="${detailHash}" data-product-index="${productIndex}">
             <span class="product-card-media">
               <img src="${escapeHtml(getDisplayImage(image))}" alt="${escapeHtml(product.name)}" loading="lazy" decoding="async" data-fallback-src="${escapeHtml(image || getBackupProductImage(product))}">
             </span>

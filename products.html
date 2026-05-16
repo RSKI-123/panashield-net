@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RISUKAI | すべての商品</title>
+    <meta name="description" content="RISUKAIの全商品一覧ページです。">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260517034232">
+    <link rel="stylesheet" href="assets/css/product-dialog.css?v=20260516211900">
+    <script defer src="assets/js/site.js?v=20260517034232"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
+
+    <div class="utility-bar" role="banner">
+      <a href="index.html#newsletter">新商品情報をメールで受け取る</a>
+      <a href="#support">保証・サポートのご案内</a>
+      <span>RISUKAI 公式オンラインストア</span>
+    </div>
+
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a class="brand" href="index.html#top" aria-label="RISUKAI ホーム">
+          <img class="brand-logo" src="assets/images/risukai-logo-rectangle.png" alt="RISUKAI">
+        </a>
+
+        <nav class="site-nav" aria-label="メインナビゲーション" data-nav>
+          <a href="index.html#categories">商品カテゴリ</a>
+          <a href="products.html">すべての商品</a>
+          <a href="index.html#custom">おすすめ</a>
+          <a href="index.html#journal">お知らせ</a>
+          <a href="index.html#library">ブランド</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="products" class="section band products-section">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">ALL PRODUCTS</p>
+            <h1>すべての商品</h1>
+          </div>
+          <span class="product-count" data-product-count>商品を読み込み中</span>
+        </div>
+
+        <div class="catalog-toolbar" aria-label="商品一覧情報">
+          <span>9号店CSV商品データ</span>
+          <span>表示価格で136商品を掲載中</span>
+        </div>
+
+        <div class="all-products-grid" data-product-grid aria-live="polite">
+          <article class="store-product-card product-skeleton">
+            <div class="product-card-media" aria-hidden="true"></div>
+            <div class="store-product-copy">
+              <p class="meta">LOADING</p>
+              <h3>商品データを読み込み中です</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="product-dialog" data-product-dialog aria-labelledby="product-dialog-title">
+      <form class="dialog-close-form" method="dialog">
+        <button class="dialog-close" type="submit" aria-label="閉じる">&times;</button>
+      </form>
+      <div class="dialog-grid">
+        <div class="dialog-media">
+          <img src="" alt="" loading="eager" decoding="async" fetchpriority="high" data-dialog-main-image>
+          <div class="dialog-thumbs" data-dialog-thumbs aria-label="商品画像"></div>
+        </div>
+        <div class="dialog-copy">
+          <p class="meta" data-dialog-category></p>
+          <h2 id="product-dialog-title" data-dialog-title></h2>
+          <p class="dialog-tagline" data-dialog-tagline></p>
+          <p class="dialog-price" data-dialog-price></p>
+          <div class="variant-chips" data-dialog-variants></div>
+          <dl class="spec-list" data-dialog-specs></dl>
+          <form class="order-panel" data-order-form>
+            <label class="quantity-field">
+              <span>数量</span>
+              <input data-order-quantity name="quantity" type="number" min="1" value="1" inputmode="numeric">
+            </label>
+            <button class="button-link" type="submit">この商品を注文する</button>
+            <p class="form-status" data-order-status aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="checkout-dialog" data-checkout-dialog aria-labelledby="checkout-dialog-title">
+      <form class="dialog-close-form" method="dialog">
+        <button class="dialog-close" type="submit" aria-label="閉じる">&times;</button>
+      </form>
+      <form class="checkout-form" data-checkout-form>
+        <div>
+          <p class="eyebrow">CHECKOUT</p>
+          <h2 id="checkout-dialog-title">ご注文内容</h2>
+        </div>
+        <div class="checkout-summary" data-checkout-summary></div>
+        <div class="checkout-fields">
+          <label>
+            <span>お名前</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>メールアドレス</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>電話番号</span>
+            <input name="tel" type="tel" autocomplete="tel" required>
+          </label>
+          <label class="checkout-field-wide">
+            <span>お届け先住所</span>
+            <textarea name="address" rows="3" autocomplete="street-address" required></textarea>
+          </label>
+          <label class="checkout-field-wide">
+            <span>備考</span>
+            <textarea name="note" rows="3"></textarea>
+          </label>
+        </div>
+        <button class="button-link" type="submit">注文内容を送信する</button>
+        <p class="form-status" data-checkout-status aria-live="polite"></p>
+      </form>
+    </dialog>
+
+    <footer id="support" class="site-footer">
+      <div>
+        <a class="brand footer-brand" href="index.html#top">
+          <img class="brand-logo" src="assets/images/risukai-logo-rectangle.png" alt="RISUKAI">
+        </a>
+        <p>RISUKAI公式オンラインストアです。</p>
+      </div>
+
+      <div class="footer-columns">
+        <div>
+          <h2>SHOP</h2>
+          <a href="index.html#categories">商品カテゴリ</a>
+          <a href="products.html">すべての商品</a>
+        </div>
+        <div>
+          <h2>SUPPORT</h2>
+          <a href="#">保証について</a>
+          <a href="#">よくある質問</a>
+          <a href="mailto:rt03@panashield.net">お問い合わせ</a>
+        </div>
+        <div>
+          <h2>COMPANY</h2>
+          <a href="index.html#library">ブランド</a>
+          <a href="index.html#journal">お知らせ</a>
+          <a href="#">会社情報</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
