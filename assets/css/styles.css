@@ -521,11 +521,6 @@ h3 {
 
 .products-section {
   background: #ffffff;
-  display: none;
-}
-
-body.catalog-visible .products-section {
-  display: block;
 }
 
 .product-count {
