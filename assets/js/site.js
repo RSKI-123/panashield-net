@@ -20,6 +20,7 @@ const checkoutDialog = document.querySelector("[data-checkout-dialog]");
 const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
+const productsSection = document.getElementById("products");
 const VARIANT_CHIP_LIMIT = 36;
 const PRODUCTS_DATA_VERSION = "20260516211900";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
@@ -103,6 +104,17 @@ const getThumbImage = (src = "") => getLocalProductDerivative(src, "thumbs") || 
 const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
 
 const variantDisplayLabel = (variant = {}) => variant.label || variant.merchantSku || variant.sku || "SKU";
+
+const updateCatalogVisibility = (scrollToCatalog = false) => {
+  const isCatalogRoute = location.hash === "#products" || location.hash.startsWith("#product=");
+  document.body.classList.toggle("catalog-visible", isCatalogRoute);
+
+  if (scrollToCatalog && location.hash === "#products" && productsSection) {
+    window.requestAnimationFrame(() => {
+      productsSection.scrollIntoView({ block: "start" });
+    });
+  }
+};
 
 const renderProducts = () => {
   if (!productGrid) return;
@@ -275,6 +287,7 @@ const openProductDialog = (product, updateHash = true) => {
 
   if (updateHash) {
     window.history.pushState(null, "", `#product=${encodeURIComponent(product.id)}`);
+    updateCatalogVisibility();
   }
 
   if (!productDialog.open) {
@@ -408,7 +421,8 @@ productDialog?.addEventListener("close", () => {
   }
 
   if (location.hash.startsWith("#product=")) {
-    window.history.replaceState(null, "", "#custom");
+    window.history.replaceState(null, "", "#products");
+    updateCatalogVisibility();
   }
 });
 
@@ -433,7 +447,8 @@ checkoutDialog?.addEventListener("click", (event) => {
 
 checkoutDialog?.addEventListener("close", () => {
   if (location.hash.startsWith("#product=")) {
-    window.history.replaceState(null, "", "#custom");
+    window.history.replaceState(null, "", "#products");
+    updateCatalogVisibility();
   }
 });
 
@@ -478,7 +493,10 @@ checkoutForm?.addEventListener("submit", async (event) => {
   }
 });
 
-window.addEventListener("hashchange", openProductFromHash);
+window.addEventListener("hashchange", () => {
+  updateCatalogVisibility(true);
+  openProductFromHash();
+});
 
 const loadProducts = async () => {
   try {
@@ -487,6 +505,7 @@ const loadProducts = async () => {
     const data = await response.json();
     products = Array.isArray(data.products) ? data.products : [];
     renderProducts();
+    updateCatalogVisibility(location.hash === "#products");
     openProductFromHash();
   } catch (error) {
     if (productGrid) {
