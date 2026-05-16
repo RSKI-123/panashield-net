@@ -21,7 +21,7 @@ const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const VARIANT_CHIP_LIMIT = 36;
-const PRODUCTS_DATA_VERSION = "20260516203426";
+const PRODUCTS_DATA_VERSION = "20260516211900";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
@@ -87,10 +87,18 @@ const getSizedImage = (src = "", size = 300) => {
   return `${src}${separator}_ex=${size}x${size}`;
 };
 
-const applyFallbackBackground = (node, src) => {
-  if (!node || !src) return;
-  node.style.backgroundImage = `url("${src.replace(/"/g, "%22")}")`;
+const getLocalProductDerivative = (src = "", folder = "medium") => {
+  const prefix = "assets/images/products/";
+  if (!src.startsWith(prefix)) return "";
+  const fileName = src.slice(prefix.length);
+  if (!fileName || fileName.includes("/")) return "";
+  const baseName = fileName.replace(/\.[^.]+$/, "");
+  return `${prefix}${folder}/${baseName}.jpg`;
 };
+
+const getDisplayImage = (src = "") => getLocalProductDerivative(src, "medium") || getSizedImage(src, 900) || src;
+
+const getThumbImage = (src = "") => getLocalProductDerivative(src, "thumbs") || getSizedImage(src, 300) || src;
 
 const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
 
@@ -110,7 +118,7 @@ const renderProducts = () => {
         <article class="store-product-card">
           <a class="store-product-button" href="${detailHash}" data-product-index="${index}">
             <span class="product-card-media">
-              <img src="${escapeHtml(getSizedImage(image, 420))}" alt="${escapeHtml(product.name)}" loading="lazy" data-fallback-src="${escapeHtml(getSizedImage(getBackupProductImage(product), 420))}">
+              <img src="${escapeHtml(getDisplayImage(image))}" alt="${escapeHtml(product.name)}" loading="lazy" decoding="async" data-fallback-src="${escapeHtml(image || getBackupProductImage(product))}">
             </span>
             <span class="store-product-copy">
               <span class="meta">${escapeHtml(label)}</span>
@@ -134,11 +142,13 @@ const renderProducts = () => {
 
 const setDialogImage = (src, alt) => {
   if (!dialogMainImage || !src) return;
+  const displaySrc = getDisplayImage(src);
   window.clearTimeout(dialogImageLoadTimer);
   dialogMainImage.classList.add("is-loading");
   dialogMainImage.dataset.requestSrc = src;
-  applyFallbackBackground(dialogMainImage, getSizedImage(src, 480));
-  dialogMainImage.src = src;
+  dialogMainImage.style.backgroundImage = "";
+  dialogMainImage.dataset.fallbackSrc = src;
+  dialogMainImage.src = displaySrc;
   dialogMainImage.alt = alt;
 
   dialogImageLoadTimer = window.setTimeout(() => {
@@ -207,16 +217,15 @@ const openProductDialog = (product, updateHash = true) => {
     dialogThumbs.innerHTML = uniqueImages
       .map(
         (image, index) => {
-          const thumbSrc = getSizedImage(image, 300);
+          const thumbSrc = getThumbImage(image);
           return `
           <button class="${index === 0 ? "is-active" : ""}" type="button" data-thumb-src="${escapeHtml(image)}">
-            <img src="${escapeHtml(thumbSrc)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="${index < 8 ? "eager" : "lazy"}" decoding="async" fetchpriority="${index < 3 ? "high" : "low"}" width="76" height="76" data-fallback-src="${escapeHtml(getSizedImage(getProductImage(product), 300))}">
+            <img src="${escapeHtml(thumbSrc)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="${index < 6 ? "eager" : "lazy"}" decoding="async" fetchpriority="${index < 2 ? "high" : "low"}" width="76" height="76" data-fallback-src="${escapeHtml(getDisplayImage(image))}">
           </button>
         `;
         },
       )
       .join("");
-    dialogThumbs.querySelectorAll("button").forEach((button) => applyFallbackBackground(button, getProductImage(product)));
   }
 
   if (dialogVariants) {
@@ -241,7 +250,7 @@ const openProductDialog = (product, updateHash = true) => {
             .map(
               (variant, index) => `
                 <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
-                  <img src="${escapeHtml(getVariantImage(variant, product))}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="lazy" decoding="async" fetchpriority="low" data-fallback-src="${escapeHtml(getProductImage(product))}">
+                  <img src="${escapeHtml(getThumbImage(getVariantImage(variant, product)))}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="lazy" decoding="async" fetchpriority="low" data-fallback-src="${escapeHtml(getDisplayImage(getProductImage(product)))}">
                   <span>${escapeHtml(variantDisplayLabel(variant))}</span>
                 </button>
               `,
@@ -292,7 +301,7 @@ const renderCheckoutSummary = () => {
 
   checkoutSummary.innerHTML = `
     <div class="checkout-product-line">
-      <img src="${escapeHtml(selectedVariant?.image || getProductImage(activeProduct))}" alt="${escapeHtml(activeProduct.name)}">
+      <img src="${escapeHtml(getThumbImage(selectedVariant?.image || getProductImage(activeProduct)))}" alt="${escapeHtml(activeProduct.name)}">
       <div>
         <strong>${escapeHtml(activeProduct.name)}</strong>
         <span>${escapeHtml(activeProduct.managementNumber || activeProduct.id)}</span>
