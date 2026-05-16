@@ -408,7 +408,7 @@ productDialog?.addEventListener("close", () => {
   }
 
   if (location.hash.startsWith("#product=")) {
-    window.history.replaceState(null, "", "#products");
+    window.history.replaceState(null, "", "#custom");
   }
 });
 
@@ -433,7 +433,7 @@ checkoutDialog?.addEventListener("click", (event) => {
 
 checkoutDialog?.addEventListener("close", () => {
   if (location.hash.startsWith("#product=")) {
-    window.history.replaceState(null, "", "#products");
+    window.history.replaceState(null, "", "#custom");
   }
 });
 
@@ -481,8 +481,6 @@ checkoutForm?.addEventListener("submit", async (event) => {
 window.addEventListener("hashchange", openProductFromHash);
 
 const loadProducts = async () => {
-  if (!productGrid) return;
-
   try {
     const response = await fetch(PRODUCTS_DATA_URL);
     if (!response.ok) throw new Error(`Product data request failed: ${response.status}`);
@@ -491,14 +489,16 @@ const loadProducts = async () => {
     renderProducts();
     openProductFromHash();
   } catch (error) {
-    productGrid.innerHTML = `
-      <article class="store-product-card product-skeleton">
-        <div class="store-product-copy">
-          <p class="meta">ERROR</p>
-          <h3>商品データを表示できませんでした</h3>
-        </div>
-      </article>
-    `;
+    if (productGrid) {
+      productGrid.innerHTML = `
+        <article class="store-product-card product-skeleton">
+          <div class="store-product-copy">
+            <p class="meta">ERROR</p>
+            <h3>商品データを表示できませんでした</h3>
+          </div>
+        </article>
+      `;
+    }
     if (productCount) productCount.textContent = "0 商品";
     console.error(error);
   }
