@@ -21,6 +21,8 @@ const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const VARIANT_CHIP_LIMIT = 36;
+const PRODUCTS_DATA_VERSION = "20260516042431";
+const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
   style: "currency",
@@ -187,7 +189,7 @@ const openProductDialog = (product, updateHash = true) => {
       .map(
         (image, index) => `
           <button class="${index === 0 ? "is-active" : ""}" type="button" data-thumb-src="${escapeHtml(image)}">
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="eager" data-fallback-src="${escapeHtml(getProductImage(product))}">
+            <img src="${escapeHtml(image)}" alt="${escapeHtml(`${product.name} ${index + 1}`)}" loading="lazy" decoding="async" fetchpriority="low" width="76" height="76" data-fallback-src="${escapeHtml(getProductImage(product))}">
           </button>
         `,
       )
@@ -217,7 +219,7 @@ const openProductDialog = (product, updateHash = true) => {
             .map(
               (variant, index) => `
                 <button class="variant-chip ${index === 0 ? "is-active" : ""}" type="button" data-variant-index="${index}" aria-pressed="${index === 0}">
-                  <img src="${escapeHtml(getVariantImage(variant, product))}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="eager" data-fallback-src="${escapeHtml(getProductImage(product))}">
+                  <img src="${escapeHtml(getVariantImage(variant, product))}" alt="${escapeHtml(variantDisplayLabel(variant))}" loading="lazy" decoding="async" fetchpriority="low" data-fallback-src="${escapeHtml(getProductImage(product))}">
                   <span>${escapeHtml(variantDisplayLabel(variant))}</span>
                 </button>
               `,
@@ -429,7 +431,7 @@ const loadProducts = async () => {
   if (!productGrid) return;
 
   try {
-    const response = await fetch("assets/data/products.json", { cache: "no-store" });
+    const response = await fetch(PRODUCTS_DATA_URL);
     if (!response.ok) throw new Error(`Product data request failed: ${response.status}`);
     const data = await response.json();
     products = Array.isArray(data.products) ? data.products : [];
