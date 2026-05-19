@@ -12,7 +12,6 @@ const dialogTitle = document.querySelector("[data-dialog-title]");
 const dialogTagline = document.querySelector("[data-dialog-tagline]");
 const dialogPrice = document.querySelector("[data-dialog-price]");
 const dialogVariants = document.querySelector("[data-dialog-variants]");
-const dialogSpecs = document.querySelector("[data-dialog-specs]");
 const orderForm = document.querySelector("[data-order-form]");
 const orderQuantity = document.querySelector("[data-order-quantity]");
 const orderStatus = document.querySelector("[data-order-status]");
@@ -272,19 +271,6 @@ const openProductDialog = (product, updateHash = true) => {
               `,
             )
             .join("");
-  }
-
-  if (dialogSpecs) {
-    dialogSpecs.innerHTML = (product.specs || [])
-      .map(
-        (spec) => `
-          <div>
-            <dt>${escapeHtml(spec.label)}</dt>
-            <dd>${escapeHtml(spec.value)}</dd>
-          </div>
-        `,
-      )
-      .join("");
   }
 
   updateVariantSelection(0, false);
