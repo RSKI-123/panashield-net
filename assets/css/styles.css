@@ -274,7 +274,9 @@ img {
 
 .media-side-one.image-media::after,
 .media-side-two.image-media::after {
-  background: linear-gradient(180deg, rgba(23, 23, 23, 0.04), rgba(23, 23, 23, 0.42));
+  background:
+    linear-gradient(90deg, rgba(23, 23, 23, 0.64), rgba(23, 23, 23, 0.28) 52%, rgba(23, 23, 23, 0.04)),
+    linear-gradient(180deg, rgba(23, 23, 23, 0.04), rgba(23, 23, 23, 0.42));
 }
 
 .library-media.image-media::after {
@@ -1486,11 +1488,11 @@ h3 {
   }
 
   .panel-copy {
-    max-width: none;
+    max-width: min(100%, 330px);
   }
 
   .panel-copy.compact h2 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.08;
     overflow-wrap: break-word;
   }

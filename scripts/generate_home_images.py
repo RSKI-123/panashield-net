@@ -11,10 +11,83 @@ LOGO_PATH = ROOT / "assets" / "images" / "risukai-logo-rectangle.png"
 FONT_BOLD = Path("C:/Windows/Fonts/NotoSansJP-VF.ttf")
 FONT_REGULAR = Path("C:/Windows/Fonts/NotoSansJP-VF.ttf")
 
+CHARGE_TERMS = [
+    "充電",
+    "充電器",
+    "充電式",
+    "ケーブル",
+    "ワイヤレス",
+    "アダプター",
+    "コンセント",
+    "Type-C",
+    "type-c",
+    "USB",
+    "PD",
+    "Lightning",
+    "ライトニング",
+    "急速",
+    "電源",
+    "バッテリー",
+]
+
+CHARGE_GROUPS = {
+    "fast": ["k35-a01", "k47-a01", "k03-k35-a01", "k06-a01"],
+    "cable": ["s02-c01", "s15-a01", "t824-c01", "s02-a01"],
+    "wireless": ["wh-k39-a01", "wh-k47-a01", "wh-qa1", "wh-qa2"],
+    "car": ["k04-a01", "k04-b01", "m22-a01"],
+    "daily": ["ksd-a01", "xdm-a01", "i3-a01", "washer-a01"],
+    "emergency": ["syj-090-a01", "g2403-a01", "fd-2026-c01"],
+}
+
 
 def load_products():
     products = json.loads(PRODUCTS_JSON.read_text(encoding="utf-8"))["products"]
     return {item["managementNumber"]: item for item in products}
+
+
+def product_text(product):
+    values = [
+        product.get("managementNumber", ""),
+        product.get("name", ""),
+        product.get("tagline", ""),
+        product.get("category", ""),
+        product.get("storeName", ""),
+    ]
+    for spec in product.get("specs", []):
+        values.extend([spec.get("label", ""), spec.get("value", "")])
+    for variant in product.get("variants", []):
+        values.extend([variant.get("label", ""), variant.get("sku", ""), variant.get("merchantSku", "")])
+    return " ".join(str(value) for value in values if value)
+
+
+def rechargeable_product_ids(products):
+    ids = []
+    for item_id, product in products.items():
+        text = product_text(product)
+        if any(term in text for term in CHARGE_TERMS) and product_image(product):
+            ids.append(item_id)
+    return ids
+
+
+def unique_ids(*groups):
+    ids = []
+    for group in groups:
+        for item_id in group:
+            if item_id not in ids:
+                ids.append(item_id)
+    return ids
+
+
+def pick(products, ids, fallback=None, limit=None):
+    fallback = fallback or []
+    picked = []
+    for item_id in unique_ids(ids, fallback):
+        product = products.get(item_id)
+        if product and product_image(product):
+            picked.append(item_id)
+        if limit and len(picked) >= limit:
+            break
+    return picked
 
 
 def product_image(product):
@@ -145,25 +218,34 @@ def save_jpg(image, name, quality=88):
 
 
 def make_hero(products):
-    canvas = draw_gradient((1600, 920), [(232, 222, 209), (248, 244, 238), (116, 131, 112)])
+    charge_ids = rechargeable_product_ids(products)
+    canvas = draw_gradient((1600, 920), [(230, 235, 232), (249, 246, 240), (87, 112, 120)])
     overlay = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     draw = ImageDraw.Draw(overlay)
-    draw.rectangle((0, 0, 760, 920), fill=(39, 34, 30, 96))
-    draw.ellipse((980, -220, 1900, 760), fill=(255, 255, 255, 76))
-    draw.ellipse((620, 520, 1560, 1180), fill=(192, 86, 61, 42))
+    draw.rectangle((0, 0, 720, 920), fill=(36, 42, 43, 96))
+    draw.ellipse((920, -260, 1940, 780), fill=(255, 255, 255, 82))
+    draw.ellipse((580, 520, 1540, 1180), fill=(192, 86, 61, 42))
+    draw.line((760, 110, 1480, 760), fill=(255, 255, 255, 88), width=8)
+    draw.line((860, 92, 1500, 620), fill=(195, 86, 61, 66), width=5)
     canvas.alpha_composite(overlay)
 
-    ids = ["m22-a01", "t776-a01", "s02-c01", "mtkc-a01", "p001-01-01"]
+    ids = pick(
+        products,
+        ["s02-c01", "wh-k39-a01", "k35-a01", "k04-a01", "ksd-a01"],
+        charge_ids,
+        5,
+    )
     images = [open_image(p) for p in product_paths(products, ids)]
     placements = [
-        ((900, 120), (490, 490), 34, False),
-        ((1135, 360), (360, 360), 30, False),
-        ((1040, 580), (320, 250), 26, False),
-        ((1240, 95), (280, 280), 26, False),
-        ((790, 450), (300, 300), 26, False),
+        ((875, 110), (500, 500), 34, False),
+        ((1140, 390), (365, 365), 30, False),
+        ((1015, 590), (330, 250), 26, False),
+        ((1235, 88), (285, 285), 26, False),
+        ((770, 440), (305, 305), 26, False),
     ]
     for img, (xy, size, radius, cover_mode) in zip(images, placements):
         paste_rounded(canvas, img, xy, size, radius, cover_mode=cover_mode)
+    draw_logo(canvas, (72, 70), 330)
     save_jpg(canvas, "hero-risukai-lineup.jpg", 88)
 
 
@@ -198,11 +280,16 @@ def make_news(products, name, ids, colors):
 
 
 def make_library(products):
-    canvas = draw_gradient((1200, 900), [(245, 240, 234), (226, 215, 202), (83, 98, 85)])
+    canvas = draw_gradient((1200, 900), [(242, 246, 243), (224, 231, 225), (78, 101, 106)])
     draw = ImageDraw.Draw(canvas)
     draw.ellipse((550, -160, 1360, 650), fill=(255, 255, 255, 82))
     draw.rounded_rectangle((58, 58, 1142, 842), radius=42, outline=(255, 255, 255, 118), width=2)
-    ids = ["m22-a01", "t776-a01", "s02-c01", "pen-715k-a01", "mimi-a01", "t825-a01"]
+    ids = pick(
+        products,
+        ["s02-c01", "wh-k39-a01", "k35-a01", "k04-a01", "ksd-a01", "syj-090-a01"],
+        rechargeable_product_ids(products),
+        6,
+    )
     placements = [
         ((115, 180), (340, 340)),
         ((430, 110), (270, 270)),
@@ -219,40 +306,41 @@ def make_library(products):
 
 def main():
     products = load_products()
+    charge_ids = rechargeable_product_ids(products)
     make_hero(products)
     make_side(
         products,
         "nav-all-products.jpg",
-        ["m22-a01", "t776-a01", "s02-c01", "mtkc-a01"],
+        pick(products, ["s02-c01", "k35-a01", "wh-k39-a01"], charge_ids, 3),
         "ALL PRODUCTS",
-        "RISUKAI LINEUP",
-        [(52, 63, 70), (102, 120, 92), (37, 41, 38)],
+        "CHARGE LINEUP",
+        [(52, 70, 77), (107, 128, 111), (38, 45, 44)],
     )
     make_side(
         products,
         "nav-shop-by-need.jpg",
-        ["t776-a01", "wh-k35-a01", "pen-715k-a01"],
+        pick(products, ["k04-a01", "wh-k47-a01", "ksd-a01"], charge_ids, 3),
         "SHOP BY NEED",
-        "CASE / CHARGE / ACCESSORY",
-        [(157, 72, 56), (203, 155, 82), (76, 56, 44)],
+        "CAR / WIRELESS / DAILY",
+        [(157, 72, 56), (201, 158, 96), (74, 64, 55)],
     )
 
     categories = [
-        ("cat-smartphone-case.jpg", ["p001-01-01", "t118-a01", "v002-a01"], "スマホケース", [(75, 84, 91), (210, 198, 184), (104, 91, 82)]),
-        ("cat-film.jpg", ["mtkc-a01", "t823-a01", "t732-a01"], "保護フィルム", [(66, 87, 102), (192, 211, 214), (62, 72, 78)]),
-        ("cat-wallet-case.jpg", ["v005-a01", "b003-01-01", "p001-02-01"], "手帳型ケース", [(112, 75, 59), (214, 185, 166), (73, 54, 48)]),
-        ("cat-back-cover.jpg", ["p002-01-01", "t117-a01", "t356-a01"], "背面カバー", [(48, 77, 72), (195, 216, 205), (59, 75, 65)]),
-        ("cat-shoulder-strap.jpg", ["t776-a01", "t776-b01", "v005-a01"], "ショルダー", [(127, 84, 92), (221, 185, 194), (72, 54, 61)]),
-        ("cat-accessory.jpg", ["mimi-a01", "pen-715k-a01", "wh-k35-a01"], "アクセサリー", [(64, 63, 84), (202, 194, 219), (50, 48, 60)]),
-        ("cat-custom-set.jpg", ["s02-c01", "wh-k39-a01", "m22-a01"], "充電・セット", [(80, 99, 105), (182, 202, 195), (49, 59, 61)]),
-        ("cat-business-bulk.jpg", ["syj-090-a01", "tbk-a01", "3db10-a01"], "まとめ買い", [(78, 76, 65), (208, 194, 154), (59, 58, 50)]),
+        ("cat-smartphone-case.jpg", pick(products, CHARGE_GROUPS["fast"], charge_ids, 3), "急速充電器", [(66, 87, 102), (190, 211, 214), (55, 68, 75)]),
+        ("cat-film.jpg", pick(products, CHARGE_GROUPS["cable"], charge_ids, 3), "充電ケーブル", [(76, 90, 92), (205, 218, 210), (59, 72, 71)]),
+        ("cat-wallet-case.jpg", pick(products, CHARGE_GROUPS["wireless"], charge_ids, 3), "ワイヤレス充電", [(92, 86, 105), (210, 202, 222), (56, 54, 70)]),
+        ("cat-back-cover.jpg", pick(products, CHARGE_GROUPS["car"], charge_ids, 3), "車載充電", [(80, 76, 65), (212, 196, 162), (58, 56, 50)]),
+        ("cat-shoulder-strap.jpg", pick(products, CHARGE_GROUPS["daily"], charge_ids, 3), "充電式日用品", [(102, 82, 78), (222, 198, 184), (74, 58, 55)]),
+        ("cat-accessory.jpg", pick(products, CHARGE_GROUPS["emergency"], charge_ids, 3), "防災・旅行", [(63, 81, 82), (188, 205, 190), (54, 65, 65)]),
+        ("cat-custom-set.jpg", pick(products, ["s02-c01", "wh-k39-a01", "k04-a01"], charge_ids, 3), "充電セット", [(80, 99, 105), (182, 202, 195), (49, 59, 61)]),
+        ("cat-business-bulk.jpg", pick(products, ["k35-a01", "s15-a01", "fd-2026-e01"], charge_ids, 3), "まとめ買い", [(78, 76, 65), (208, 194, 154), (59, 58, 50)]),
     ]
     for args in categories:
         make_category(products, *args)
 
-    make_news(products, "news-new-items.jpg", ["zj-k007-a01", "wh-k47-a01"], [(66, 82, 82), (178, 195, 181), (55, 65, 62)])
-    make_news(products, "news-model-update.jpg", ["t823-a01", "t732-a01"], [(80, 76, 95), (205, 198, 218), (62, 58, 74)])
-    make_news(products, "news-care-guide.jpg", ["mimi-b01", "3db10-a01"], [(122, 78, 70), (226, 192, 178), (76, 58, 54)])
+    make_news(products, "news-new-items.jpg", pick(products, ["wh-k47-a01", "s15-a01"], charge_ids, 2), [(66, 82, 82), (178, 195, 181), (55, 65, 62)])
+    make_news(products, "news-model-update.jpg", pick(products, ["k35-a01", "k47-a01"], charge_ids, 2), [(80, 76, 95), (205, 198, 218), (62, 58, 74)])
+    make_news(products, "news-care-guide.jpg", pick(products, ["ksd-a01", "syj-090-a01"], charge_ids, 2), [(122, 78, 70), (226, 192, 178), (76, 58, 54)])
     make_library(products)
 
 
