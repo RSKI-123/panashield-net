@@ -21,7 +21,7 @@ const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const productsSection = document.getElementById("products");
 const VARIANT_CHIP_LIMIT = 36;
-const PRODUCTS_DATA_VERSION = "2026052201";
+const PRODUCTS_DATA_VERSION = "2026052202";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
@@ -254,8 +254,7 @@ const openProductDialog = (product, updateHash = true) => {
             <select data-variant-select>
               ${variants
                 .map((variant, index) => {
-                  const label = `${variantDisplayLabel(variant)} / ${formatAmount(variant.price || product.price || 0)}`;
-                  return `<option value="${index}">${escapeHtml(label)}</option>`;
+                  return `<option value="${index}">${escapeHtml(variantDisplayLabel(variant))}</option>`;
                 })
                 .join("")}
             </select>
