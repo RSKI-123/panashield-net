@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-16T11:34:13.938Z",
-  "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache",
+  "updatedAt": "2026-05-22T04:45:33.480805Z",
+  "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache_plus_lukurasu_item_page_json",
   "products": [
     {
       "id": "m22-a01",
@@ -131008,6 +131008,771 @@
         ],
         "priceField": "表示価格",
         "fallbackStoreCode": "kiraringiftbox"
+      }
+    },
+    {
+      "id": "t190-a01",
+      "managementNumber": "t190-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "iPad ケース iPad Air /11インチ 動画視聴 ipad Air ケース 軽量 手帳型 TPU おしゃれ かわいい カバー Pro10.5 Pro 11インチ M5 M4 第4 第3 第2世代 Pro 2021 2020 iPad ケース カバー 耐衝撃 ケース ipad air Pro 11インチ iPad Pro 11インチ(M5/M4) 第10世代",
+      "tagline": "ipad air 11 ケース ipad 2020 pro 12.9インチ カバー スタンド ペン収納 Apple アップル スマートケース カバー オートスリープ機能 カバー Air11インチ TPU かわいい カラー 薄型",
+      "price": 1180,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "iPadケース",
+      "orderPath": "#product=t190-a01",
+      "whiteBgImage": "assets/images/products/407c5b0784418addbb6f.jpg",
+      "mainImage": "assets/images/products/407c5b0784418addbb6f.jpg",
+      "images": [
+        "assets/images/products/407c5b0784418addbb6f.jpg",
+        "assets/images/products/7a7985804b3daf4d01a4.jpg",
+        "assets/images/products/613435331928086d5c54.jpg",
+        "assets/images/products/b480105db98401d4eed6.jpg",
+        "assets/images/products/40e1964ae9b6a138c6b6.jpg",
+        "assets/images/products/620bf0cb4e6e8f4a4500.jpg",
+        "assets/images/products/9b7616ebec13b6f27942.jpg",
+        "assets/images/products/b66a31da2f14de44c1d9.jpg",
+        "assets/images/products/0a8d34177c8ab6301ab8.jpg",
+        "assets/images/products/2225577ef89ab1436d42.jpg",
+        "assets/images/products/c13ea28569e76db59d6c.jpg",
+        "assets/images/products/2317785bd4ba1b9e8ffa.jpg",
+        "assets/images/products/4d9dd72c63537c52f277.jpg",
+        "assets/images/products/4f1fcf30c333bfd8ca0c.jpg",
+        "assets/images/products/f180e3085ac0c91ea7eb.jpg",
+        "assets/images/products/db698c1ffa60b15f1eed.jpg",
+        "assets/images/products/c6e060fb588fca11bb05.jpg",
+        "assets/images/products/3430d171258b3cd289e1.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t190-pink-ipad2021129",
+          "merchantSku": "t190-pink-ipad2021129",
+          "label": "ピンク / Pro12.9インチ(2021)",
+          "image": "assets/images/products/2317785bd4ba1b9e8ffa.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-brown-ipad202111",
+          "merchantSku": "t190-brown-ipad202111",
+          "label": "ブラウン / Pro11インチ(2021)",
+          "image": "assets/images/products/4d9dd72c63537c52f277.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-white-ipad202011",
+          "merchantSku": "t190-white-ipad202011",
+          "label": "ホワイト / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/4f1fcf30c333bfd8ca0c.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-brown-ipad202011",
+          "merchantSku": "t190-brown-ipad202011",
+          "label": "ブラウン / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/4d9dd72c63537c52f277.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-white-ipad202111",
+          "merchantSku": "t190-white-ipad202111",
+          "label": "ホワイト / Pro11インチ(2021)",
+          "image": "assets/images/products/4f1fcf30c333bfd8ca0c.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-blue-iipad2020129",
+          "merchantSku": "t190-blue-iipad2020129",
+          "label": "ブルー / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/f180e3085ac0c91ea7eb.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-brown-ipad2021129",
+          "merchantSku": "t190-brown-ipad2021129",
+          "label": "ブラウン / Pro12.9インチ(2021)",
+          "image": "assets/images/products/4d9dd72c63537c52f277.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-red-ipad2021129",
+          "merchantSku": "t190-red-ipad2021129",
+          "label": "レッド / Pro12.9インチ(2021)",
+          "image": "assets/images/products/db698c1ffa60b15f1eed.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-rose-ipad2020129",
+          "merchantSku": "t190-rose-ipad2020129",
+          "label": "ローズ / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/c6e060fb588fca11bb05.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-deepblue-ipad2021129",
+          "merchantSku": "t190-deepblue-ipad2021129",
+          "label": "パープル / Pro12.9インチ(2021)",
+          "image": "assets/images/products/3430d171258b3cd289e1.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-white-ipad2021129",
+          "merchantSku": "t190-white-ipad2021129",
+          "label": "ホワイト / Pro12.9インチ(2021)",
+          "image": "assets/images/products/4f1fcf30c333bfd8ca0c.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-rose-ipad202111",
+          "merchantSku": "t190-rose-ipad202111",
+          "label": "ローズ / Pro11インチ(2021)",
+          "image": "assets/images/products/c6e060fb588fca11bb05.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-pink-ipad202011",
+          "merchantSku": "t190-pink-ipad202011",
+          "label": "ピンク / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/2317785bd4ba1b9e8ffa.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-rose-ipad202011",
+          "merchantSku": "t190-rose-ipad202011",
+          "label": "ローズ / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/c6e060fb588fca11bb05.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-blue-iipad2021129",
+          "merchantSku": "t190-blue-iipad2021129",
+          "label": "ブルー / Pro12.9インチ(2021)",
+          "image": "assets/images/products/f180e3085ac0c91ea7eb.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-brown-ipad2020129",
+          "merchantSku": "t190-brown-ipad2020129",
+          "label": "ブラウン / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/4d9dd72c63537c52f277.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-pink-ipad202111",
+          "merchantSku": "t190-pink-ipad202111",
+          "label": "ピンク / Pro11インチ(2021)",
+          "image": "assets/images/products/2317785bd4ba1b9e8ffa.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-pink-ipad2020129",
+          "merchantSku": "t190-pink-ipad2020129",
+          "label": "ピンク / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/2317785bd4ba1b9e8ffa.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-red-ipad2020129",
+          "merchantSku": "t190-red-ipad2020129",
+          "label": "レッド / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/db698c1ffa60b15f1eed.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-red-ipad202011",
+          "merchantSku": "t190-red-ipad202011",
+          "label": "レッド / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/db698c1ffa60b15f1eed.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-deepblue-ipad202111",
+          "merchantSku": "t190-deepblue-ipad202111",
+          "label": "パープル / Pro11インチ(2021)",
+          "image": "assets/images/products/3430d171258b3cd289e1.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-rose-ipad2021129",
+          "merchantSku": "t190-rose-ipad2021129",
+          "label": "ローズ / Pro12.9インチ(2021)",
+          "image": "assets/images/products/c6e060fb588fca11bb05.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-deepblue-ipad202011",
+          "merchantSku": "t190-deepblue-ipad202011",
+          "label": "パープル / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/3430d171258b3cd289e1.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-red-ipad202111",
+          "merchantSku": "t190-red-ipad202111",
+          "label": "レッド / Pro11インチ(2021)",
+          "image": "assets/images/products/db698c1ffa60b15f1eed.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-blue-iipad202011",
+          "merchantSku": "t190-blue-iipad202011",
+          "label": "ブルー / Pro/Air 11インチ(2020)",
+          "image": "assets/images/products/f180e3085ac0c91ea7eb.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-blue-iipad202111",
+          "merchantSku": "t190-blue-iipad202111",
+          "label": "ブルー / Pro11インチ(2021)",
+          "image": "assets/images/products/f180e3085ac0c91ea7eb.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-deepblue-ipad2020129",
+          "merchantSku": "t190-deepblue-ipad2020129",
+          "label": "パープル / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/3430d171258b3cd289e1.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t190-white-ipad2020129",
+          "merchantSku": "t190-white-ipad2020129",
+          "label": "ホワイト / Pro 12.9インチ(2020)",
+          "image": "assets/images/products/4f1fcf30c333bfd8ca0c.jpg",
+          "price": 1180,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "ブランド名",
+          "value": "iPad ケース Air Pro 11インチ 12.9インチ"
+        },
+        {
+          "label": "メーカー型番",
+          "value": "t190-"
+        },
+        {
+          "label": "代表カラー",
+          "value": "ピンク"
+        },
+        {
+          "label": "スマホ・タブレットケースの形状",
+          "value": "手帳"
+        },
+        {
+          "label": "スマホ・タブレットケースの素材",
+          "value": "レザー"
+        },
+        {
+          "label": "機種・対応機種（タブレット）",
+          "value": "多機種対応"
+        },
+        {
+          "label": "SKU数",
+          "value": "28 種"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "560051"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t190-a01/",
+        "fetchedAt": "2026-05-22T04:45:32.967374Z",
+        "priceField": "taxIncludedPrice",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON."
+      }
+    },
+    {
+      "id": "t375-a01",
+      "managementNumber": "t375-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "iPad ケース iPad 10.2インチ 第7世代 iPad ケース iPad 2018/2017 ケース 耐衝撃 iPad 9.7 iPad pro 10．5 ケース iPad mini4 ケース iPadPro9.7 iPad air ケース iPadAir2 かわいい 第5世代 iPad 2017 ケース",
+      "tagline": "送料無料 高品質PUレザー+TPU素材2 in One 超軽量iPadケース",
+      "price": 1380,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "iPadケース",
+      "orderPath": "#product=t375-a01",
+      "whiteBgImage": "assets/images/products/1b2f68938922c242e3c6.jpg",
+      "mainImage": "assets/images/products/1b2f68938922c242e3c6.jpg",
+      "images": [
+        "assets/images/products/1b2f68938922c242e3c6.jpg",
+        "assets/images/products/559524e1c2071b794d83.jpg",
+        "assets/images/products/22e802bd69e0423201db.jpg",
+        "assets/images/products/36e2ef6236bb17b78275.jpg",
+        "assets/images/products/2c3c1ff3aa34eb249b76.jpg",
+        "assets/images/products/7ca3f81d7495957f4745.jpg",
+        "assets/images/products/252e79caae7c17f3165e.jpg",
+        "assets/images/products/54a66f5f105f8470cb6b.jpg",
+        "assets/images/products/be90b304462cfb991d2f.jpg",
+        "assets/images/products/708c37201fa76b7df096.jpg",
+        "assets/images/products/e53a2ed8f5c8b8d1dbbf.jpg",
+        "assets/images/products/e479c9574cbbb9d72f53.jpg",
+        "assets/images/products/ba8535389aa4236fe10d.jpg",
+        "assets/images/products/0bb369c01976a2164919.jpg",
+        "assets/images/products/a2db6e80f31d283591b0.jpg",
+        "assets/images/products/da722bf1607a01e1dd95.jpg",
+        "assets/images/products/bea21cffbeb6d5e55922.jpg",
+        "assets/images/products/5f64726360fb11d8aca9.jpg",
+        "assets/images/products/eae17e998262eabc1bfe.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t375-purple-ipadpro2022129s",
+          "merchantSku": "t375-purple-ipadpro2022129s",
+          "label": "パープル / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-gray-ipadair2022109s",
+          "merchantSku": "t375-gray-ipadair2022109s",
+          "label": "グレー / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/0bb369c01976a2164919.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipadpro2022129s",
+          "merchantSku": "t375-pink-ipadpro2022129s",
+          "label": "ピンク / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipad202011",
+          "merchantSku": "t375-purple-ipad202011",
+          "label": "パープル / 11インチiPadPro/iPadAir(2020)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipad2022109s",
+          "merchantSku": "t375-springgreen-ipad2022109s",
+          "label": "ミントグリーン / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipadair2022109s",
+          "merchantSku": "t375-springgreen-ipadair2022109s",
+          "label": "ミントグリーン / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipad2021102s",
+          "merchantSku": "t375-purple-ipad2021102s",
+          "label": "パープル / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-gray-ipad2022109s",
+          "merchantSku": "t375-gray-ipad2022109s",
+          "label": "グレー / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/0bb369c01976a2164919.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad2022109s",
+          "merchantSku": "t375-black-ipad2022109s",
+          "label": "ブラック / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad201797",
+          "merchantSku": "t375-black-ipad201797",
+          "label": "ブラック / 9.7インチ iPad (2017)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-skyblue-ipad2022109s",
+          "merchantSku": "t375-skyblue-ipad2022109s",
+          "label": "スカイブルー / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/5f64726360fb11d8aca9.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipadair2022109s",
+          "merchantSku": "t375-pink-ipadair2022109s",
+          "label": "ピンク / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipad202111",
+          "merchantSku": "t375-purple-ipad202111",
+          "label": "パープル / 11インチiPadPro(2021)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipad202011",
+          "merchantSku": "t375-springgreen-ipad202011",
+          "label": "ミントグリーン / 11インチiPadPro/iPadAir(2020)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipadmini202183s",
+          "merchantSku": "t375-darkgreen-ipadmini202183s",
+          "label": "ダークグリーン / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipad2022109s",
+          "merchantSku": "t375-darkgreen-ipad2022109s",
+          "label": "ダークグリーン / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipad2020129",
+          "merchantSku": "t375-pink-ipad2020129",
+          "label": "ピンク / 12.9インチiPadPro(2020)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipadair2022109s",
+          "merchantSku": "t375-darkgreen-ipadair2022109s",
+          "label": "ダークグリーン / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-gray-ipadmini202183s",
+          "merchantSku": "t375-gray-ipadmini202183s",
+          "label": "グレー / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/0bb369c01976a2164919.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-gray-ipad2021102s",
+          "merchantSku": "t375-gray-ipad2021102s",
+          "label": "グレー / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/0bb369c01976a2164919.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad2020129",
+          "merchantSku": "t375-black-ipad2020129",
+          "label": "ブラック / 12.9インチiPadPro(2020)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipad2022109s",
+          "merchantSku": "t375-pink-ipad2022109s",
+          "label": "ピンク / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipadpro2022129s",
+          "merchantSku": "t375-darkgreen-ipadpro2022129s",
+          "label": "ダークグリーン / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipad202111",
+          "merchantSku": "t375-darkgreen-ipad202111",
+          "label": "ダークグリーン / 11インチiPadPro(2021)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-skyblue-ipad2021102s",
+          "merchantSku": "t375-skyblue-ipad2021102s",
+          "label": "スカイブルー / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/5f64726360fb11d8aca9.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-skyblue-ipadpro2022129s",
+          "merchantSku": "t375-skyblue-ipadpro2022129s",
+          "label": "スカイブルー / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/5f64726360fb11d8aca9.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipad2021102s",
+          "merchantSku": "t375-springgreen-ipad2021102s",
+          "label": "ミントグリーン / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipad2021102s",
+          "merchantSku": "t375-darkgreen-ipad2021102s",
+          "label": "ダークグリーン / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipadmini202183s",
+          "merchantSku": "t375-pink-ipadmini202183s",
+          "label": "ピンク / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipadpro2022129s",
+          "merchantSku": "t375-black-ipadpro2022129s",
+          "label": "ブラック / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipadmini202183s",
+          "merchantSku": "t375-purple-ipadmini202183s",
+          "label": "パープル / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipadair2022109s",
+          "merchantSku": "t375-black-ipadair2022109s",
+          "label": "ブラック / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipad2022109s",
+          "merchantSku": "t375-purple-ipad2022109s",
+          "label": "パープル / 10.9インチ iPad (2022)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipad202011",
+          "merchantSku": "t375-darkgreen-ipad202011",
+          "label": "ダークグリーン / 11インチiPadPro/iPadAir(2020)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipadpro2022129s",
+          "merchantSku": "t375-springgreen-ipadpro2022129s",
+          "label": "ミントグリーン / 12.9インチ iPad Pro (2022)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad202111",
+          "merchantSku": "t375-black-ipad202111",
+          "label": "ブラック / 11インチiPadPro(2021)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-pink-ipad2021102s",
+          "merchantSku": "t375-pink-ipad2021102s",
+          "label": "ピンク / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/a2db6e80f31d283591b0.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipadmini202183s",
+          "merchantSku": "t375-black-ipadmini202183s",
+          "label": "ブラック / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad2021129",
+          "merchantSku": "t375-black-ipad2021129",
+          "label": "ブラック / 12.9インチiPadPro(2021)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipadair2022109s",
+          "merchantSku": "t375-purple-ipadair2022109s",
+          "label": "パープル / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad2021102s",
+          "merchantSku": "t375-black-ipad2021102s",
+          "label": "ブラック / 10.2インチ iPad (2021)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-springgreen-ipadmini202183s",
+          "merchantSku": "t375-springgreen-ipadmini202183s",
+          "label": "ミントグリーン / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/da722bf1607a01e1dd95.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-skyblue-ipadair2022109s",
+          "merchantSku": "t375-skyblue-ipadair2022109s",
+          "label": "スカイブルー / 10.9インチ iPad Air (2022)",
+          "image": "assets/images/products/5f64726360fb11d8aca9.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-purple-ipad2021129",
+          "merchantSku": "t375-purple-ipad2021129",
+          "label": "パープル / 12.9インチiPadPro(2021)",
+          "image": "assets/images/products/ba8535389aa4236fe10d.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-darkgreen-ipad2021129",
+          "merchantSku": "t375-darkgreen-ipad2021129",
+          "label": "ダークグリーン / 12.9インチiPadPro(2021)",
+          "image": "assets/images/products/eae17e998262eabc1bfe.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-black-ipad2019102",
+          "merchantSku": "t375-black-ipad2019102",
+          "label": "ブラック / 10.2インチ iPad (2019/2020)",
+          "image": "assets/images/products/bea21cffbeb6d5e55922.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t375-skyblue-ipadmini202183s",
+          "merchantSku": "t375-skyblue-ipadmini202183s",
+          "label": "スカイブルー / 8.3インチ iPad mini (2021)",
+          "image": "assets/images/products/5f64726360fb11d8aca9.jpg",
+          "price": 1380,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "ブランド名",
+          "value": "iPad Air 第5世代 第6世代 第9世"
+        },
+        {
+          "label": "メーカー型番",
+          "value": "t375"
+        },
+        {
+          "label": "代表カラー",
+          "value": "パープル"
+        },
+        {
+          "label": "カラー",
+          "value": "パープル"
+        },
+        {
+          "label": "スマホ・タブレットケースの形状",
+          "value": "手帳"
+        },
+        {
+          "label": "スマホ・タブレットケースの素材",
+          "value": "レザー"
+        },
+        {
+          "label": "機種・対応機種（タブレット）",
+          "value": "多機種対応"
+        },
+        {
+          "label": "SKU数",
+          "value": "47 種"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "560051"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t375-a01/",
+        "fetchedAt": "2026-05-22T04:45:33.480805Z",
+        "priceField": "taxIncludedPrice",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON."
       }
     }
   ]
