@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-22T04:45:33.480805Z",
+  "updatedAt": "2026-08-17T08:36:52.949Z",
   "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache_plus_lukurasu_item_page_json",
   "products": [
     {
@@ -131773,6 +131773,2558 @@
         "fetchedAt": "2026-05-22T07:27:47.076Z",
         "priceField": "表示価格",
         "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website price uses referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "aicut-a02",
+      "managementNumber": "aicut-a02",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【充電しすぎを夜中も任せる！】ノートPC 充電 アダプター TypeC 充電コネクタ 充電忘れ対策 満充電後の不安 過充電防止 バッテリー保護 アダプター Type-C アダプター 充電 USB-C 充電アダプター タブレット 充電 アダプター 寝室 充電保護アダプター 充電アダプター",
+      "tagline": "【毎日の充電を差すだけ対策】充電ケーブル 仕事用 満充電後の不安 コネクタ デスク周り ベッドサイド 家族用 予備用 持ち運び 満充電後 バッテリー劣化 家庭用 AI検知 AI認識 ノート",
+      "price": 3980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電アクセサリー",
+      "orderPath": "#product=aicut-a02",
+      "whiteBgImage": "assets/images/products/68e8beb53b9d32892583.jpg",
+      "mainImage": "assets/images/products/537e0849aef1677b42b1.jpg",
+      "images": [
+        "assets/images/products/537e0849aef1677b42b1.jpg",
+        "assets/images/products/86a4fe69109d6272c54d.jpg",
+        "assets/images/products/ed797ac408fcc2e3192d.jpg",
+        "assets/images/products/fbf1c9ed617fdf321a7e.jpg",
+        "assets/images/products/01693550db6835faa24d.jpg",
+        "assets/images/products/37755d6b4acf08579387.jpg",
+        "assets/images/products/3bfcfb669cc8be109956.jpg",
+        "assets/images/products/41183df7467d7ff5707e.jpg",
+        "assets/images/products/5e288e9027dbfcd37b92.jpg",
+        "assets/images/products/81bf0b0dcc190b56d420.jpg",
+        "assets/images/products/d49f968dd7a0bd8e1380.jpg",
+        "assets/images/products/a9e53e43e4052d995fe3.jpg",
+        "assets/images/products/5a17cad13a4bb349590d.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "aicut-typec-silver",
+          "merchantSku": "aicut-typec-silver",
+          "label": "標準",
+          "image": "assets/images/products/537e0849aef1677b42b1.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "aicut-a02"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥3,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,780"
+        },
+        {
+          "label": "商品番号",
+          "value": "AIcut-a02"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "565195"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/aicut-a02/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "bell-a01",
+      "managementNumber": "bell-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【夜間介助の合図を別室へ】 呼び鈴 工事不要 防水防塵 受信機コンセント給電 38曲メロディ 音量調節4段階 最大300m通信 送信機電池式 光と音で通知 押すだけ ネックストラップ付 シニア向け 家庭用 廊下用 ワイヤレスチャイム",
+      "tagline": "【消灯後の見守りの先まで合図を届ける】 見やすい押し面を日常へ 大判キー 片手操作 やさしい操作 シンプルキー 大判ボタン 大型押面 指先操作 視認性 軽い力 大きめキー",
+      "price": 4980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "ワイヤレスチャイム",
+      "orderPath": "#product=bell-a01",
+      "whiteBgImage": "assets/images/products/a42f0fa621a61dbd1d52.jpg",
+      "mainImage": "assets/images/products/a42f0fa621a61dbd1d52.jpg",
+      "images": [
+        "assets/images/products/a42f0fa621a61dbd1d52.jpg",
+        "assets/images/products/2588789a53c15d33a1bc.jpg",
+        "assets/images/products/609a3fc9067a4c317186.jpg",
+        "assets/images/products/043ad0cc7ac2e9eac9bd.jpg",
+        "assets/images/products/0f02d0a0b028430d22e0.jpg",
+        "assets/images/products/c0807704d4528213463f.jpg",
+        "assets/images/products/e9fb44486a273fce5828.jpg",
+        "assets/images/products/9dca01dfb638b5c4f16b.jpg",
+        "assets/images/products/c7395ed8956f05b0dbf8.jpg",
+        "assets/images/products/2000ac31f8e713da9685.jpg",
+        "assets/images/products/2002876e932279463148.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "bell",
+          "merchantSku": "bell",
+          "label": "1受信器+2ボタン",
+          "image": "assets/images/products/a42f0fa621a61dbd1d52.jpg",
+          "price": 4980,
+          "standardPrice": 2180,
+          "displayPrice": 4980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "bell-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥4,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥2,180"
+        },
+        {
+          "label": "商品番号",
+          "value": "bell-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "214970"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/bell-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "clip-a01",
+      "managementNumber": "clip-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "★迷子ケーブルを定位置へ★ケーブルホルダー マグネット マグネット式 充電線の定位置 両面テープ 落下防止 USBケーブル対応 コードクリップ マグネット ケーブル収納 デスク 配線整理 デスク コード収納 卓上 USBケーブル ホルダー ケーブルクリップ",
+      "tagline": "【机上の線を片手で戻す！】机の上 マグネット式 充電線の定位置 仕事机 在宅勤務 テレワーク パソコン周り 充電場所 ベッド横 車内配線 デスク下 強力磁石 磁力固定 粘着固定",
+      "price": 1250,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "ケーブル収納",
+      "orderPath": "#product=clip-a01",
+      "whiteBgImage": "assets/images/products/26f05894ff19206383ee.jpg",
+      "mainImage": "assets/images/products/26f05894ff19206383ee.jpg",
+      "images": [
+        "assets/images/products/26f05894ff19206383ee.jpg",
+        "assets/images/products/fa2c6b64ca591978e238.jpg",
+        "assets/images/products/24d289eacf0266450fa2.jpg",
+        "assets/images/products/be25a1253e322bfd51d2.jpg",
+        "assets/images/products/0dc9c2c797e10b468421.jpg",
+        "assets/images/products/6bfad15e995908afd210.jpg",
+        "assets/images/products/95ae87cc8ed8ca230fd6.jpg",
+        "assets/images/products/d4e789c7fba4596bcc8a.jpg",
+        "assets/images/products/b352397734060606047f.jpg",
+        "assets/images/products/2116000171ee6304dd6d.jpg",
+        "assets/images/products/2dfdea4b74588a67bfa7.jpg",
+        "assets/images/products/be7db924659171570614.jpg",
+        "assets/images/products/a5c4b0d9329b1103d63c.jpg",
+        "assets/images/products/47750c95797b57758759.jpg",
+        "assets/images/products/b274fbeabcbc0eac3c20.jpg",
+        "assets/images/products/2a866b6ab6c77bc247db.jpg",
+        "assets/images/products/d29743c0e49c126cf925.jpg",
+        "assets/images/products/90f1776e948ed417bc32.jpg",
+        "assets/images/products/b400173b02b1f3b2a26f.jpg",
+        "assets/images/products/2cecb6e40e06117017e0.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "clip-02-blue",
+          "merchantSku": "clip-02-blue",
+          "label": "B クリアカバータイプ（6個入） / ミントブルー",
+          "image": "assets/images/products/f06d15faadedfaa50dcd.jpg",
+          "price": 2300,
+          "standardPrice": 1080,
+          "displayPrice": 2300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-02-white",
+          "merchantSku": "clip-02-white",
+          "label": "B クリアカバータイプ（6個入） / ホワイト",
+          "image": "assets/images/products/d9fb333ea76d4781cb25.jpg",
+          "price": 2300,
+          "standardPrice": 1080,
+          "displayPrice": 2300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-02-black",
+          "merchantSku": "clip-02-black",
+          "label": "B クリアカバータイプ（6個入） / ブラック",
+          "image": "assets/images/products/70957ef85b6ee8dece38.jpg",
+          "price": 2300,
+          "standardPrice": 1080,
+          "displayPrice": 2300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-02-purple",
+          "merchantSku": "clip-02-purple",
+          "label": "B クリアカバータイプ（6個入） / ラベンダーパープル",
+          "image": "assets/images/products/469aba75ff1cdd4325d2.jpg",
+          "price": 2300,
+          "standardPrice": 1080,
+          "displayPrice": 2300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-02-orange",
+          "merchantSku": "clip-02-orange",
+          "label": "B クリアカバータイプ（6個入） / アプリコットオレンジ",
+          "image": "assets/images/products/cf5fbf0c5378d3e9c181.jpg",
+          "price": 2300,
+          "standardPrice": 1080,
+          "displayPrice": 2300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-01-black",
+          "merchantSku": "clip-01-black",
+          "label": "A シンプルタイプ（3個入） / ブラック",
+          "image": "assets/images/products/bb4ba6d6bd44ba2ff2db.jpg",
+          "price": 1250,
+          "standardPrice": 580,
+          "displayPrice": 1250,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "clip-01-white",
+          "merchantSku": "clip-01-white",
+          "label": "A シンプルタイプ（3個入） / ホワイト",
+          "image": "assets/images/products/4f687c2dc6d5f180d750.jpg",
+          "price": 1250,
+          "standardPrice": 580,
+          "displayPrice": 1250,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "clip-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "7 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥1,250〜¥2,300"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥580〜¥1,080"
+        },
+        {
+          "label": "商品番号",
+          "value": "clip-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "567180"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/clip-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "fan01-a01",
+      "managementNumber": "fan01-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【化粧台にUSBの快適さ】デスクファン DCモーター搭載 3段階風量調節 充電式 室内干し補助 卓上送風 空気循環 省スペース 軽量設計 シンプル外観 休憩部屋 玄関 入力5V/2A 夏の生活家電 冷房併用 上下左右調節USB扇風機",
+      "tagline": "【身だしなみに持ち歩く風、冷房と併用】 小物整理 模型作業 生地整理 静音運転 空気入替 節電対策 車内 テント内 宿泊先 待ち時間 庭仕事 学び時間 仕事部屋 試験勉強",
+      "price": 6980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "扇風機",
+      "orderPath": "#product=fan01-a01",
+      "whiteBgImage": "assets/images/products/58b053b5e0600b169da1.jpg",
+      "mainImage": "assets/images/products/58b053b5e0600b169da1.jpg",
+      "images": [
+        "assets/images/products/58b053b5e0600b169da1.jpg",
+        "assets/images/products/d43b8163bdee654f80f3.jpg",
+        "assets/images/products/63968fb751e556e8dfb0.jpg",
+        "assets/images/products/62a4edc40b5df23741d6.jpg",
+        "assets/images/products/fedaf2443098072aa9a9.jpg",
+        "assets/images/products/04aa02dca380d3a71dfa.jpg",
+        "assets/images/products/1d959a81d65bf2ccaca0.jpg",
+        "assets/images/products/eddc7a55c7061bf357ec.jpg",
+        "assets/images/products/9eb3db570d1bed2bda05.jpg",
+        "assets/images/products/29683bda663335f7aa3a.jpg",
+        "assets/images/products/fffbcc04adcd1fdc6acd.jpg",
+        "assets/images/products/b683c5aadd4fa12012e4.jpg",
+        "assets/images/products/5f4514ef76c48ab71a24.jpg",
+        "assets/images/products/a7bc226a18d27c6eb32c.jpg",
+        "assets/images/products/0e71093ec332f2fd4922.jpg",
+        "assets/images/products/40edc41cd42cb8d814b2.jpg",
+        "assets/images/products/6481c7292049f77c7373.jpg",
+        "assets/images/products/7ebfd390a9dcc7308822.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "fan01-white",
+          "merchantSku": "fan01-white",
+          "label": "標準",
+          "image": "assets/images/products/58b053b5e0600b169da1.jpg",
+          "price": 6980,
+          "standardPrice": 2980,
+          "displayPrice": 6980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "fan01-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥6,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥2,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "fan01-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "208375"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/fan01-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "gfa-a02",
+      "managementNumber": "gfa-a02",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【動きに沿ってフィット、好みの締め感】Fitbit Air スポーツバンド 柔らか素材 ムレにくい ループ仕様 丈夫な編み バンド交換 繰り返し着脱 手首フィット 着脱簡単 動作中も安定 輪に通して装着 軽量 面ファスナー固定 GoogleFitbitAirナイロンバンド",
+      "tagline": "【運動中の装着感を支える、装着簡単】長時間の装着を軽やかに ランニング対応軽量ストラップ ランニング時のずれを抑える トレーニング用ソフトストラップ ランニングの手元をすっきり",
+      "price": 3980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "スマートウォッチバンド",
+      "orderPath": "#product=gfa-a02",
+      "whiteBgImage": "assets/images/products/affe79bde375a6da757d.jpg",
+      "mainImage": "assets/images/products/affe79bde375a6da757d.jpg",
+      "images": [
+        "assets/images/products/affe79bde375a6da757d.jpg",
+        "assets/images/products/e76a630fd0dcc13f22e3.jpg",
+        "assets/images/products/30238bdcac505f4820db.jpg",
+        "assets/images/products/7630f1606268d98f1cd0.jpg",
+        "assets/images/products/0c9161cb53372c8b0a18.jpg",
+        "assets/images/products/427b40cbab8ca1edc5d9.jpg",
+        "assets/images/products/64f37333260e5c487852.jpg",
+        "assets/images/products/5ea9b9caf67fba170e28.jpg",
+        "assets/images/products/df8319babeb753259b9e.jpg",
+        "assets/images/products/48713c53aec96e67c801.jpg",
+        "assets/images/products/494edc52516866e83a2c.jpg",
+        "assets/images/products/82414d7a3a384193547d.jpg",
+        "assets/images/products/c55caea5e4acd0fb3496.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "gfa-wildfield-1set",
+          "merchantSku": "gfa-wildfield-1set",
+          "label": "Google Fitbit Air / フィールドグリーン / 1本入り",
+          "image": "assets/images/products/348e4e9c9c2bdf8f54dc.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-orange-3set",
+          "merchantSku": "gfa-orange-3set",
+          "label": "Google Fitbit Air / オレンジ / 3本入り",
+          "image": "assets/images/products/fc24f5b84df9fd76e391.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-glacierwhite-1set",
+          "merchantSku": "gfa-glacierwhite-1set",
+          "label": "Google Fitbit Air / ミスト / 1本入り",
+          "image": "assets/images/products/24074b3055ce3de0aa7e.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-orange-5set",
+          "merchantSku": "gfa-orange-5set",
+          "label": "Google Fitbit Air / オレンジ / 5本入り",
+          "image": "assets/images/products/fc24f5b84df9fd76e391.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-berry-5set",
+          "merchantSku": "gfa-berry-5set",
+          "label": "Google Fitbit Air / ベリー / 5本入り",
+          "image": "assets/images/products/4d4c33acd92521128ffb.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-orange-1set",
+          "merchantSku": "gfa-orange-1set",
+          "label": "Google Fitbit Air / オレンジ / 1本入り",
+          "image": "assets/images/products/fc24f5b84df9fd76e391.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-pdorange-3set",
+          "merchantSku": "gfa-pdorange-3set",
+          "label": "Google Fitbit Air / ポルカドットオレンジ / 3本入り",
+          "image": "assets/images/products/b562957c00ca1bb4c93c.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-pdorange-5set",
+          "merchantSku": "gfa-pdorange-5set",
+          "label": "Google Fitbit Air / ポルカドットオレンジ / 5本入り",
+          "image": "assets/images/products/b562957c00ca1bb4c93c.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-azureblue-1set",
+          "merchantSku": "gfa-azureblue-1set",
+          "label": "Google Fitbit Air / アズールブルー / 1本入り",
+          "image": "assets/images/products/1c09bd28769b7c5719ef.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-glacierwhite-5set",
+          "merchantSku": "gfa-glacierwhite-5set",
+          "label": "Google Fitbit Air / ミスト / 5本入り",
+          "image": "assets/images/products/24074b3055ce3de0aa7e.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-glacierwhite-3set",
+          "merchantSku": "gfa-glacierwhite-3set",
+          "label": "Google Fitbit Air / ミスト / 3本入り",
+          "image": "assets/images/products/24074b3055ce3de0aa7e.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-armygreen-1set",
+          "merchantSku": "gfa-armygreen-1set",
+          "label": "Google Fitbit Air / アーミーグリーン / 1本入り",
+          "image": "assets/images/products/90769e9149174839e4b7.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-wildfield-3set",
+          "merchantSku": "gfa-wildfield-3set",
+          "label": "Google Fitbit Air / フィールドグリーン / 3本入り",
+          "image": "assets/images/products/348e4e9c9c2bdf8f54dc.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-armygreen-3set",
+          "merchantSku": "gfa-armygreen-3set",
+          "label": "Google Fitbit Air / アーミーグリーン / 3本入り",
+          "image": "assets/images/products/90769e9149174839e4b7.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-wildfield-5set",
+          "merchantSku": "gfa-wildfield-5set",
+          "label": "Google Fitbit Air / フィールドグリーン / 5本入り",
+          "image": "assets/images/products/348e4e9c9c2bdf8f54dc.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-lightblue-3set",
+          "merchantSku": "gfa-lightblue-3set",
+          "label": "Google Fitbit Air / ライトブルー / 3本入り",
+          "image": "assets/images/products/3aa11fe7a5ceabbe7043.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-starlight-3set",
+          "merchantSku": "gfa-starlight-3set",
+          "label": "Google Fitbit Air / スターライト / 3本入り",
+          "image": "assets/images/products/00aa4a7bcb327b53dc12.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-lightblue-5set",
+          "merchantSku": "gfa-lightblue-5set",
+          "label": "Google Fitbit Air / ライトブルー / 5本入り",
+          "image": "assets/images/products/3aa11fe7a5ceabbe7043.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-starlight-5set",
+          "merchantSku": "gfa-starlight-5set",
+          "label": "Google Fitbit Air / スターライト / 5本入り",
+          "image": "assets/images/products/00aa4a7bcb327b53dc12.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-hyacinthpurple-5set",
+          "merchantSku": "gfa-hyacinthpurple-5set",
+          "label": "Google Fitbit Air / ヒヤシンスパープル / 5本入り",
+          "image": "assets/images/products/dcbc8b5d8a30e9e2f7eb.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-black-5set",
+          "merchantSku": "gfa-black-5set",
+          "label": "Google Fitbit Air / ブラック / 5本入り",
+          "image": "assets/images/products/3cba20980e19141ea747.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-starlight-1set",
+          "merchantSku": "gfa-starlight-1set",
+          "label": "Google Fitbit Air / スターライト / 1本入り",
+          "image": "assets/images/products/00aa4a7bcb327b53dc12.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-black-1set",
+          "merchantSku": "gfa-black-1set",
+          "label": "Google Fitbit Air / ブラック / 1本入り",
+          "image": "assets/images/products/3cba20980e19141ea747.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-pdorange-1set",
+          "merchantSku": "gfa-pdorange-1set",
+          "label": "Google Fitbit Air / ポルカドットオレンジ / 1本入り",
+          "image": "assets/images/products/b562957c00ca1bb4c93c.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-berry-1set",
+          "merchantSku": "gfa-berry-1set",
+          "label": "Google Fitbit Air / ベリー / 1本入り",
+          "image": "assets/images/products/4d4c33acd92521128ffb.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-berry-3set",
+          "merchantSku": "gfa-berry-3set",
+          "label": "Google Fitbit Air / ベリー / 3本入り",
+          "image": "assets/images/products/4d4c33acd92521128ffb.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-hyacinthpurple-3set",
+          "merchantSku": "gfa-hyacinthpurple-3set",
+          "label": "Google Fitbit Air / ヒヤシンスパープル / 3本入り",
+          "image": "assets/images/products/dcbc8b5d8a30e9e2f7eb.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-lightblue-1set",
+          "merchantSku": "gfa-lightblue-1set",
+          "label": "Google Fitbit Air / ライトブルー / 1本入り",
+          "image": "assets/images/products/3aa11fe7a5ceabbe7043.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-black-3set",
+          "merchantSku": "gfa-black-3set",
+          "label": "Google Fitbit Air / ブラック / 3本入り",
+          "image": "assets/images/products/3cba20980e19141ea747.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-hyacinthpurple-1set",
+          "merchantSku": "gfa-hyacinthpurple-1set",
+          "label": "Google Fitbit Air / ヒヤシンスパープル / 1本入り",
+          "image": "assets/images/products/dcbc8b5d8a30e9e2f7eb.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-armygreen-5set",
+          "merchantSku": "gfa-armygreen-5set",
+          "label": "Google Fitbit Air / アーミーグリーン / 5本入り",
+          "image": "assets/images/products/90769e9149174839e4b7.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-azureblue-3set",
+          "merchantSku": "gfa-azureblue-3set",
+          "label": "Google Fitbit Air / アズールブルー / 3本入り",
+          "image": "assets/images/products/1c09bd28769b7c5719ef.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-azureblue-5set",
+          "merchantSku": "gfa-azureblue-5set",
+          "label": "Google Fitbit Air / アズールブルー / 5本入り",
+          "image": "assets/images/products/1c09bd28769b7c5719ef.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-sandypink-5set",
+          "merchantSku": "gfa-sandypink-5set",
+          "label": "Google Fitbit Air / サンドピンク / 5本入り",
+          "image": "assets/images/products/864ccb80a188b1d75fc2.jpg",
+          "price": 19900,
+          "standardPrice": 7980,
+          "displayPrice": 19900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-sandypink-3set",
+          "merchantSku": "gfa-sandypink-3set",
+          "label": "Google Fitbit Air / サンドピンク / 3本入り",
+          "image": "assets/images/products/864ccb80a188b1d75fc2.jpg",
+          "price": 11940,
+          "standardPrice": 4980,
+          "displayPrice": 11940,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "gfa-sandypink-1set",
+          "merchantSku": "gfa-sandypink-1set",
+          "label": "Google Fitbit Air / サンドピンク / 1本入り",
+          "image": "assets/images/products/864ccb80a188b1d75fc2.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "gfa-a02"
+        },
+        {
+          "label": "SKU数",
+          "value": "36 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥3,980〜¥19,900"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,780〜¥7,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "gfa-a02"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "302145"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/gfa-a02/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "k61-a01",
+      "managementNumber": "k61-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【二刀流充電デバイス】モバイルバッテリー 5000mAh AC 折りたたみプラグ付き 20W 急速充電 Type-C 編み込みケーブル内蔵 ケーブル一体型 LEDライト 残量表示 軽量 コンパクト 2台同時充電 PSE認証 旅行 出張 通勤 防災非常用電源 iPhone/iPad/Android対応 持ち運び充電器",
+      "tagline": "【緊急時を守る複合型非常電源】コンセント直挿し可能 充電器とモバイルバッテリー一体化 荷物大幅削減 海外電圧対応 飛行機搭載 OK 日常外出から災害備蓄まで幅広く活用 停電 地震対策",
+      "price": 6980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "モバイルバッテリー",
+      "orderPath": "#product=k61-a01",
+      "whiteBgImage": "assets/images/products/c5a659f293f676201e67.jpg",
+      "mainImage": "assets/images/products/5ab3363d005c2add4da8.jpg",
+      "images": [
+        "assets/images/products/5ab3363d005c2add4da8.jpg",
+        "assets/images/products/dbdebcc49a43b3916c19.jpg",
+        "assets/images/products/f9ca41abe0de38ea4791.jpg",
+        "assets/images/products/c71261ae973e1aba3983.jpg",
+        "assets/images/products/75f8a29a787e08611bd8.jpg",
+        "assets/images/products/d3880259a8507d1f6e19.jpg",
+        "assets/images/products/d820ff0972bbb6eea10d.jpg",
+        "assets/images/products/6c4196b3a6bd1149d244.jpg",
+        "assets/images/products/4f3c22f468087841ca44.jpg",
+        "assets/images/products/eff84f316b24f74f5006.jpg",
+        "assets/images/products/2db92d03bffe5fc7d932.jpg",
+        "assets/images/products/ccf073436702e53da361.jpg",
+        "assets/images/products/e32de44d3d6ec28517ed.jpg",
+        "assets/images/products/9e14f60e08d900ab2d9a.jpg",
+        "assets/images/products/9eef5fd2471fed4a7ccf.jpg",
+        "assets/images/products/df873dbe45f13c3bb8d0.jpg",
+        "assets/images/products/e57b6cb7e7798c873a4f.jpg",
+        "assets/images/products/589bb1cfe1b1fbe2ca0d.jpg",
+        "assets/images/products/e3b37046f5e7d2061fdf.jpg",
+        "assets/images/products/55ea5a97d49f5f2246c0.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "k61-typec-black",
+          "merchantSku": "k61-typec-black",
+          "label": "ブラック",
+          "image": "assets/images/products/c5a659f293f676201e67.jpg",
+          "price": 6980,
+          "standardPrice": 3280,
+          "displayPrice": 6980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k61-typec-white",
+          "merchantSku": "k61-typec-white",
+          "label": "ホワイト",
+          "image": "assets/images/products/bb1868640b8650b4df7b.jpg",
+          "price": 6980,
+          "standardPrice": 3280,
+          "displayPrice": 6980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "k61-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "2 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥6,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥3,280"
+        },
+        {
+          "label": "商品番号",
+          "value": "k61-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "564277"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/k61-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "mja-a01",
+      "managementNumber": "mja-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【湯上がり、速乾が心強い】 吸水タオル 摩擦軽減 家族用 3枚組 カラーランダム 毛量の多い髪 吸水繊維の混紡 やわらかな触感 日陰干し 繊維が抜けにくい 高吸水繊維 丈夫な素材 ドライヤー短縮補助 毛先まで包む 交換用として キャンプ用 ドライタオル",
+      "tagline": "【入浴が済んだ時、洗い替えを快適に】 親子のバスタイム、毎日をサポート 頭髪ケア 洗髪習慣 濡れ髪 髪の水気 親子ケア 洗髪後 送風前 洗面室ケア 入浴直後 家族の髪 お風呂後 夜シャン",
+      "price": 3980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "タオル",
+      "orderPath": "#product=mja-a01",
+      "whiteBgImage": "assets/images/products/dc9530073242863540d6.jpg",
+      "mainImage": "assets/images/products/dc9530073242863540d6.jpg",
+      "images": [
+        "assets/images/products/dc9530073242863540d6.jpg",
+        "assets/images/products/2db1b3df175cad365214.jpg",
+        "assets/images/products/4afda0a6814c43c4469f.jpg",
+        "assets/images/products/41f50a89a7779e457bd4.jpg",
+        "assets/images/products/4f00ca7ff260d2c328b8.jpg",
+        "assets/images/products/230d7c5e3dea4c906251.jpg",
+        "assets/images/products/234395696eb4571d2c5e.jpg",
+        "assets/images/products/5b4480a7492252db0324.jpg",
+        "assets/images/products/f387f525d756826e0684.jpg",
+        "assets/images/products/f4fad82dcc0ed15dc68f.jpg",
+        "assets/images/products/85ceb6b86c0b48a48b99.jpg",
+        "assets/images/products/9e3d39f95c2f9f059e4b.jpg",
+        "assets/images/products/de4ddbb259eb6058568e.jpg",
+        "assets/images/products/5e2932b7e401f66df803.jpg",
+        "assets/images/products/90ced77f15763b37abd7.jpg",
+        "assets/images/products/77b5d4a9e15bc15a5d11.jpg",
+        "assets/images/products/82acfb332f7e36798ffe.jpg",
+        "assets/images/products/03813701a12105754549.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "mja-3set",
+          "merchantSku": "mja-3set",
+          "label": "3点セット(ランダム)",
+          "image": "assets/images/products/dc9530073242863540d6.jpg",
+          "price": 3980,
+          "standardPrice": 980,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "mja-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥3,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥980"
+        },
+        {
+          "label": "商品番号",
+          "value": "mja-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "551732"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/mja-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "s17-a01",
+      "managementNumber": "s17-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【ケーブル絡まり解消】iPhone 充電器 30W 3 ポート PD 急速充電器 60W 超高速磁気 編み込みケーブル Type-C 一体型 iPhone17/17e/16/15 Android タブレット対応 コンパクト 持ち運び便利 断線にくい 耐久性抜群 出張/旅行 タイプc ケーブル スマホ 充電器 ケーブル Type-C",
+      "tagline": "マグネット Type-C ケーブル 1m 高出力急速充電・高速データ転送対応 編み込み素材 Android タブレット全機種適合 MacBook Neo対応 30W 多口 PD 充電器同梱便利充電セット iPhone",
+      "price": 1980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電器・ケーブル",
+      "orderPath": "#product=s17-a01",
+      "whiteBgImage": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+      "mainImage": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+      "images": [
+        "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+        "assets/images/products/b4dde81518784b78c0f2.jpg",
+        "assets/images/products/efe1c00312a639cf68f6.jpg",
+        "assets/images/products/60e7ac02830de77efa77.jpg",
+        "assets/images/products/f181ef122dc84548b677.jpg",
+        "assets/images/products/47c9e9e1f74560315a86.jpg",
+        "assets/images/products/9f8872139be607caab66.jpg",
+        "assets/images/products/aea7ecdfcc04c805514e.jpg",
+        "assets/images/products/028c6df767b33cdda828.jpg",
+        "assets/images/products/056040983e23d7d27c08.jpg",
+        "assets/images/products/0997bb380801ee93adb9.jpg",
+        "assets/images/products/4c41b1606de338190f4d.jpg",
+        "assets/images/products/59abf9f36801f6e66da0.jpg",
+        "assets/images/products/d6e04bea23e36760ad87.jpg",
+        "assets/images/products/8d2c4e4a5efac839c04e.jpg",
+        "assets/images/products/71a3984042be25145243.jpg",
+        "assets/images/products/057535afcc999d2ad5c3.jpg",
+        "assets/images/products/abfc618402e1f9c9f43f.jpg",
+        "assets/images/products/141c072d38bc71a98443.jpg",
+        "assets/images/products/9b798499d123a3442bc8.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "s17-cc-black-1m",
+          "merchantSku": "s17-cc-black-1m",
+          "label": "【TypeC TO TypeC】-1M / ケーブルのみ（充電器なし）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 1980,
+          "standardPrice": 880,
+          "displayPrice": 1980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-dawnpink101",
+          "merchantSku": "s17-cc-black-1m-k35-dawnpink101",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（ドーンピンク）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-seafoam103",
+          "merchantSku": "s17-cc-black-1m-k35-seafoam103",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（シーフォーム）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-bluefog102",
+          "merchantSku": "s17-cc-black-1m-k35-bluefog102",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（ブルーフォグ）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-black106",
+          "merchantSku": "s17-cc-black-1m-k35-black106",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（ブラック）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-white105",
+          "merchantSku": "s17-cc-black-1m-k35-white105",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（ホワイト）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "s17-cc-black-1m-k35-greige104",
+          "merchantSku": "s17-cc-black-1m-k35-greige104",
+          "label": "【TypeC TO TypeC】-1M / 30W急速充電（グレージュ）",
+          "image": "assets/images/products/9af2a1cb6db1815a7afa.jpg",
+          "price": 3980,
+          "standardPrice": 1780,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "s17-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "7 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥1,980〜¥3,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥880〜¥1,780"
+        },
+        {
+          "label": "商品番号",
+          "value": "s17-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "565187"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/s17-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "s18-a01",
+      "managementNumber": "s18-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "★置くだけ充電に迷わない★ iPhone 15 充電ケーブル USB-C Type-C CtoC iWatch Watch充電器 ウォッチ充電器 磁気充電 二股仕様 1.2m ブラック 高速データ転送 iPad Android タブレット ノートPC 2台充電 同時充電 一本化 旅行 出張 デスク周り 自宅用",
+      "tagline": "オフィス用の予備に iWatch 磁気充電 置くだけ充電 Watch充電器 全シリーズ対応 充電準備 バッグ収納 予備用 ケーブル整理 ストレート 軽量 充電コード USB充電 スマホ充電",
+      "price": 5980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電ケーブル",
+      "orderPath": "#product=s18-a01",
+      "whiteBgImage": "assets/images/products/f8ac3a852893e1223839.jpg",
+      "mainImage": "assets/images/products/f8ac3a852893e1223839.jpg",
+      "images": [
+        "assets/images/products/f8ac3a852893e1223839.jpg",
+        "assets/images/products/baac89d775475430979c.jpg",
+        "assets/images/products/21d5668ec47823fb902d.jpg",
+        "assets/images/products/2e8b727ebc0ef1e76b33.jpg",
+        "assets/images/products/22224a2012cd10651dfa.jpg",
+        "assets/images/products/eb6187b1c9e4c52cc9c0.jpg",
+        "assets/images/products/6ac3eda370763a662792.jpg",
+        "assets/images/products/bcef7111a9e157ea3eae.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "s18-typec",
+          "merchantSku": "s18-typec",
+          "label": "標準",
+          "image": "assets/images/products/f8ac3a852893e1223839.jpg",
+          "price": 5980,
+          "standardPrice": 2480,
+          "displayPrice": 5980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "s18-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥5,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥2,480"
+        },
+        {
+          "label": "商品番号",
+          "value": "s18-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "565187"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/s18-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "sus304bl-a01",
+      "managementNumber": "sus304bl-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "★冷たさを長く連れていく★ 強力保冷 繰り返し使える 急速冷却 釣り 暑さ対策 災害備蓄 買い物 冷却パック 冷凍庫 スポーツ 持ち運び 海水浴 予備用 長時間 クーラーボックス 冷凍対応 お弁当 BBQ 停電時 食品鮮度 レジャー 保冷パック 弁当箱 保冷剤",
+      "tagline": "【飲み物も食材も冷たく】 保冷剤 停電対策 車内保冷 買い物 スポーツ BBQ 海水浴 キャンプ ピクニック 釣り 弁当箱 食品鮮度 持ち歩き 飲み物 冷蔵品 お弁当 予備用 アイスパック",
+      "price": 2700,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "保冷剤",
+      "orderPath": "#product=sus304bl-a01",
+      "whiteBgImage": "assets/images/products/c3b9d5f6d633b4260798.jpg",
+      "mainImage": "assets/images/products/c3b9d5f6d633b4260798.jpg",
+      "images": [
+        "assets/images/products/c3b9d5f6d633b4260798.jpg",
+        "assets/images/products/e88cb2ede8a41b1b2907.jpg",
+        "assets/images/products/705d652ec7ea787cae8e.jpg",
+        "assets/images/products/852a16ce821cf91b532b.jpg",
+        "assets/images/products/6d581dee5c7b68962390.jpg",
+        "assets/images/products/990e95c063206f33fae4.jpg",
+        "assets/images/products/80de66415bdce9ea4faa.jpg",
+        "assets/images/products/3ce287fad7746e33ed4a.jpg",
+        "assets/images/products/3e602fd11428cb252a7c.jpg",
+        "assets/images/products/dc1688d9107214610bc0.jpg",
+        "assets/images/products/6199232c6817806e0c10.jpg",
+        "assets/images/products/901eaca36400c096d59c.jpg",
+        "assets/images/products/82837fe77218a75fbe67.jpg",
+        "assets/images/products/4ab557bb463375c170e8.jpg",
+        "assets/images/products/01e5ed4d35e012cd83de.jpg",
+        "assets/images/products/02330cfb24a954235060.jpg",
+        "assets/images/products/930f11a9654a320b7ccd.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "sus304bl-2set",
+          "merchantSku": "sus304bl-2set",
+          "label": "2個",
+          "image": "assets/images/products/c3b9d5f6d633b4260798.jpg",
+          "price": 5400,
+          "standardPrice": 1980,
+          "displayPrice": 5400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "sus304bl",
+          "merchantSku": "sus304bl",
+          "label": "1個",
+          "image": "assets/images/products/c3b9d5f6d633b4260798.jpg",
+          "price": 2700,
+          "standardPrice": 1280,
+          "displayPrice": 2700,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "sus304bl-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "2 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥2,700〜¥5,400"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,280〜¥1,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "SUS304BL"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "568877"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/sus304bl-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "t831-a01",
+      "managementNumber": "t831-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "★遮光と目隠しを両立★レースカーテン 水回り 目隠し 窓辺 耐水 日よけ キッチン 防水 省スペース お風呂 採光 模様替え 浴室 調光 インテリア 洗面所 遮光 長持ち 小窓 シンプル 横型 無地 プリーツスクリーン 外の視線 窓用シェード",
+      "tagline": "【貼り付け選びを迷わない】 日常使い 耐水 お風呂 無地 防水 浴室 シンプル 採光 洗面所 日差し対策 貼り付け 湿気対策 レースカーテン UVカット 水回り 省スペース",
+      "price": 8980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "カーテン・シェード",
+      "orderPath": "#product=t831-a01",
+      "whiteBgImage": "assets/images/products/20946d71b129f57d4605.jpg",
+      "mainImage": "assets/images/products/20946d71b129f57d4605.jpg",
+      "images": [
+        "assets/images/products/20946d71b129f57d4605.jpg",
+        "assets/images/products/fdae858bfcb488750b76.jpg",
+        "assets/images/products/817e2f0a0b444c7f13f9.jpg",
+        "assets/images/products/7f71a0682318e7e345d5.jpg",
+        "assets/images/products/69e1afa231321b991700.jpg",
+        "assets/images/products/b04f6a9e84b2c504adc3.jpg",
+        "assets/images/products/af659eb3feb575273549.jpg",
+        "assets/images/products/f44ea473e725337c87a2.jpg",
+        "assets/images/products/a9a1f93786c40d5cbc0f.jpg",
+        "assets/images/products/07773a1523aa71ba9ae9.jpg",
+        "assets/images/products/6959336647a097560e92.jpg",
+        "assets/images/products/ee4ea471db30e77219fb.jpg",
+        "assets/images/products/6e56ce896f8b5a52693f.jpg",
+        "assets/images/products/ae3d9103e3a8af361fd9.jpg",
+        "assets/images/products/471f8d4123e26954bba5.jpg",
+        "assets/images/products/ff9d2e196f6bdd620a98.jpg",
+        "assets/images/products/9baaaadbcf7e599386be.jpg",
+        "assets/images/products/3dd210bb05439de87a59.jpg",
+        "assets/images/products/70c2a5a42e13f057ae11.jpg",
+        "assets/images/products/e47f28769a2b585429fa.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t831-hy-100-133-white",
+          "merchantSku": "t831-hy-100×133-white-2set",
+          "label": "幻影レースカーテンのみ（2枚） / 幅100×丈133cm",
+          "image": "assets/images/products/20946d71b129f57d4605.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t831-hy-100-176-white",
+          "merchantSku": "t831-hy-100×176-white-2set",
+          "label": "幻影レースカーテンのみ（2枚） / 幅100×丈176cm",
+          "image": "assets/images/products/20946d71b129f57d4605.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t831-hy-100-208-white",
+          "merchantSku": "t831-hy-100×208-white-2set",
+          "label": "幻影レースカーテンのみ（2枚） / 幅100×丈208cm",
+          "image": "assets/images/products/20946d71b129f57d4605.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t831-hy-100-198-white",
+          "merchantSku": "t831-hy-100×198-white-2set",
+          "label": "幻影レースカーテンのみ（2枚） / 幅100×丈198cm",
+          "image": "assets/images/products/20946d71b129f57d4605.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t831-hy-100-108-white",
+          "merchantSku": "t831-hy-100×108-white-2set",
+          "label": "幻影レースカーテンのみ（2枚） / 幅100×丈108cm",
+          "image": "assets/images/products/20946d71b129f57d4605.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "t831-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "5 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥8,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥3,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "t831-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "300667"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t831-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "t832-a01",
+      "managementNumber": "t832-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "★遮光と目隠しを両立★レースカーテン 水回り 目隠し 窓辺 耐水 日よけ キッチン 防水 省スペース お風呂 採光 模様替え 浴室 調光 インテリア 洗面所 遮光 長持ち 小窓 シンプル 横型 無地 プリーツスクリーン 外の視線 窓用シェード",
+      "tagline": "【貼り付け選びを迷わない】 日常使い 耐水 お風呂 無地 防水 浴室 シンプル 採光 洗面所 日差し対策 貼り付け 湿気対策 レースカーテン UVカット 水回り 省スペース",
+      "price": 8980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "カーテン・シェード",
+      "orderPath": "#product=t832-a01",
+      "whiteBgImage": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+      "mainImage": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+      "images": [
+        "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+        "assets/images/products/5d2a72c447ed7a96e4b8.jpg",
+        "assets/images/products/0948037bb727c9d3e1de.jpg",
+        "assets/images/products/576f62488ffd9a7622cb.jpg",
+        "assets/images/products/5f983f3d2ed53d4bc675.jpg",
+        "assets/images/products/a5e1e7d5c7bf08757458.jpg",
+        "assets/images/products/d1b470705d2d8de96251.jpg",
+        "assets/images/products/4ef2df46f6055d4262fb.jpg",
+        "assets/images/products/ba0c18ab7e5a250a1852.jpg",
+        "assets/images/products/7ce12bb6d29ec4a1be94.jpg",
+        "assets/images/products/76b51841864689205c73.jpg",
+        "assets/images/products/ea016e4248feb0b1dc67.jpg",
+        "assets/images/products/1e679ceff3d497bff21b.jpg",
+        "assets/images/products/6f23fdd0a30cd396e393.jpg",
+        "assets/images/products/5e2d9e5f316c691f6ad7.jpg",
+        "assets/images/products/58cfcaaefcdc0e74c1e6.jpg",
+        "assets/images/products/8ee73456691d88863766.jpg",
+        "assets/images/products/b8b00715693945507b3c.jpg",
+        "assets/images/products/9162408b5502c7e77b00.jpg",
+        "assets/images/products/8d8f46453881f0c85c3c.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t832-tw-100-108-white",
+          "merchantSku": "t832-tw-100×108-white-2set",
+          "label": "幅100×丈108cm(2枚組)",
+          "image": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t832-tw-100-198-white",
+          "merchantSku": "t832-tw-100×198-white-2set",
+          "label": "幅100×丈198cm(2枚組)",
+          "image": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t832-tw-100-133-white",
+          "merchantSku": "t832-tw-100×133-white-2set",
+          "label": "幅100×丈133cm(2枚組)",
+          "image": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t832-tw-100-176-white",
+          "merchantSku": "t832-tw-100×176-white-2set",
+          "label": "幅100×丈176cm(2枚組)",
+          "image": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t832-tw-100-208-white",
+          "merchantSku": "t832-tw-100×208-white-2set",
+          "label": "幅100×丈208cm(2枚組)",
+          "image": "assets/images/products/eaf64ffcf2dc7b001d13.jpg",
+          "price": 8980,
+          "standardPrice": 3980,
+          "displayPrice": 8980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "t832-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "5 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥8,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥3,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "t832-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "300667"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t832-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "t833-a01",
+      "managementNumber": "t833-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【一人暮らし神アイテム】ローマンシェード 突っ張り式 1 級遮光 調光 UV カット 99% 完全遮断 防音 保温 防寒 断熱 防炎 水洗 防水 高品質 亜麻生地 賃貸原状回復 OK 穴あけ不要 / ネジ固定 浴室 キッチン 小窓 目隠し 間仕切り 1cm 単位オーダー 子供 寝室 腰窓 カーテン",
+      "tagline": "【送料無料】突っ張り無穴タイプとネジ固定両対応、西日紫外線遮り騒音抑え水洗い簡単、一人暮らし賃貸戸建どちらの窓にもフィットするオーダーローマンシェード亜麻調生地",
+      "price": 26900,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "カーテン・シェード",
+      "orderPath": "#product=t833-a01",
+      "whiteBgImage": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+      "mainImage": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+      "images": [
+        "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+        "assets/images/products/18a3538a34270789168a.jpg",
+        "assets/images/products/5016100c78ad92d264ed.jpg",
+        "assets/images/products/d5113839e0cd903b9dfa.jpg",
+        "assets/images/products/8418d60b1fdec9c92d2e.jpg",
+        "assets/images/products/0e877ecc83e119248f76.jpg",
+        "assets/images/products/1fc6ecc72b63b5d7e525.jpg",
+        "assets/images/products/3bfdae31a326932cd552.jpg",
+        "assets/images/products/a4bea5bace3443e54e6e.jpg",
+        "assets/images/products/c216118983e1f0785b81.jpg",
+        "assets/images/products/97c8c31f19ec1117e0d2.jpg",
+        "assets/images/products/478762a2d7bb70bff773.jpg",
+        "assets/images/products/8b13d0d27d1527e4db71.jpg",
+        "assets/images/products/3157deed5e2fe3014913.jpg",
+        "assets/images/products/32bdfc13d6c1d5393ad6.jpg",
+        "assets/images/products/a4558f25852042c77b8f.jpg",
+        "assets/images/products/429ffde68aa32bdfbdfa.jpg",
+        "assets/images/products/be47a194d64d1d7f7a69.jpg",
+        "assets/images/products/60ff115030efdce8c41f.jpg",
+        "assets/images/products/dc786cc1a7cc7300939a.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t833-dk-zg-121140-81110",
+          "merchantSku": "t833-dk-zg-121140-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 121-140 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 58000,
+          "standardPrice": 27600,
+          "displayPrice": 58000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-141160-5180",
+          "merchantSku": "t833-md-zg-141160-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 141-160 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 61800,
+          "standardPrice": 29400,
+          "displayPrice": 61800,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-81100-5180",
+          "merchantSku": "t833-dk-zg-81100-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 81-100 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 46000,
+          "standardPrice": 21900,
+          "displayPrice": 46000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-161180-81110",
+          "merchantSku": "t833-md-zg-161180-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 161-180 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 71000,
+          "standardPrice": 33800,
+          "displayPrice": 71000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-4060-0050",
+          "merchantSku": "t833-md-zg-4060-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 40-60 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 46000,
+          "standardPrice": 21900,
+          "displayPrice": 46000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-81100-0050",
+          "merchantSku": "t833-md-zg-81100-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 81-100 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 48100,
+          "standardPrice": 22900,
+          "displayPrice": 48100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-4060-5180",
+          "merchantSku": "t833-md-zg-4060-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 40-60 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 47100,
+          "standardPrice": 22400,
+          "displayPrice": 47100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-141160-0050",
+          "merchantSku": "t833-md-zg-141160-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 141-160 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 56100,
+          "standardPrice": 26700,
+          "displayPrice": 56100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-81100-0050",
+          "merchantSku": "t833-dk-zg-81100-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 81-100 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 43700,
+          "standardPrice": 20800,
+          "displayPrice": 43700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-101120-151180",
+          "merchantSku": "t833-md-zg-101120-151180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 101-120 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 68900,
+          "standardPrice": 32800,
+          "displayPrice": 68900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-161180-5180",
+          "merchantSku": "t833-dk-zg-161180-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 161-180 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 60300,
+          "standardPrice": 28700,
+          "displayPrice": 60300,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-4060-111150",
+          "merchantSku": "t833-md-zg-4060-111150",
+          "label": "穴あけ不要タイプ / 遮光生地 / 40-60 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 49800,
+          "standardPrice": 23700,
+          "displayPrice": 49800,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-121140-81110",
+          "merchantSku": "t833-md-zg-121140-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 121-140 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 62600,
+          "standardPrice": 29800,
+          "displayPrice": 62600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-101120-111150",
+          "merchantSku": "t833-dk-zg-101120-111150",
+          "label": "ネジ固定タイプ / 遮光生地 / 101-120 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 60000,
+          "standardPrice": 28600,
+          "displayPrice": 60000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-161180-0050",
+          "merchantSku": "t833-dk-zg-161180-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 161-180 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 53800,
+          "standardPrice": 25600,
+          "displayPrice": 53800,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-6180-111150",
+          "merchantSku": "t833-md-zg-6180-111150",
+          "label": "穴あけ不要タイプ / 遮光生地 / 61-80 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 54200,
+          "standardPrice": 25800,
+          "displayPrice": 54200,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-101120-81110",
+          "merchantSku": "t833-md-zg-101120-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 101-120 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 59000,
+          "standardPrice": 28100,
+          "displayPrice": 59000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-161180-5180",
+          "merchantSku": "t833-md-zg-161180-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 161-180 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 64700,
+          "standardPrice": 30800,
+          "displayPrice": 64700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-161180-81110",
+          "merchantSku": "t833-dk-zg-161180-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 161-180 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 66600,
+          "standardPrice": 31700,
+          "displayPrice": 66600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-161180-0050",
+          "merchantSku": "t833-md-zg-161180-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 161-180 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 58200,
+          "standardPrice": 27700,
+          "displayPrice": 58200,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-6180-151180",
+          "merchantSku": "t833-dk-zg-6180-151180",
+          "label": "ネジ固定タイプ / 遮光生地 / 61-80 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 52500,
+          "standardPrice": 25000,
+          "displayPrice": 52500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-81100-151180",
+          "merchantSku": "t833-md-zg-81100-151180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 81-100 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 62200,
+          "standardPrice": 29600,
+          "displayPrice": 62200,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-101120-111150",
+          "merchantSku": "t833-md-zg-101120-111150",
+          "label": "穴あけ不要タイプ / 遮光生地 / 101-120 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 64700,
+          "standardPrice": 30800,
+          "displayPrice": 64700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-6180-111150",
+          "merchantSku": "t833-dk-zg-6180-111150",
+          "label": "ネジ固定タイプ / 遮光生地 / 61-80 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 49800,
+          "standardPrice": 23700,
+          "displayPrice": 49800,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-101120-81110",
+          "merchantSku": "t833-dk-zg-101120-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 101-120 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 54600,
+          "standardPrice": 26000,
+          "displayPrice": 54600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-81100-5180",
+          "merchantSku": "t833-md-zg-81100-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 81-100 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 50400,
+          "standardPrice": 24000,
+          "displayPrice": 50400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-6180-151180",
+          "merchantSku": "t833-md-zg-6180-151180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 61-80 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 57000,
+          "standardPrice": 27100,
+          "displayPrice": 57000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-141160-5180",
+          "merchantSku": "t833-dk-zg-141160-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 141-160 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 57400,
+          "standardPrice": 27300,
+          "displayPrice": 57400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-4060-81110",
+          "merchantSku": "t833-dk-zg-4060-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 40-60 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 43700,
+          "standardPrice": 20800,
+          "displayPrice": 43700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-141160-0050",
+          "merchantSku": "t833-dk-zg-141160-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 141-160 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 51700,
+          "standardPrice": 24600,
+          "displayPrice": 51700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-81100-81110",
+          "merchantSku": "t833-md-zg-81100-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 81-100 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 54000,
+          "standardPrice": 25700,
+          "displayPrice": 54000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-101120-5180",
+          "merchantSku": "t833-md-zg-101120-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 101-120 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 54600,
+          "standardPrice": 26000,
+          "displayPrice": 54600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-141160-81110",
+          "merchantSku": "t833-md-zg-141160-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 141-160 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 67500,
+          "standardPrice": 32100,
+          "displayPrice": 67500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-121140-111150",
+          "merchantSku": "t833-dk-zg-121140-111150",
+          "label": "ネジ固定タイプ / 遮光生地 / 121-140 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 64700,
+          "standardPrice": 30800,
+          "displayPrice": 64700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-101120-0050",
+          "merchantSku": "t833-md-zg-101120-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 101-120 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 50400,
+          "standardPrice": 24000,
+          "displayPrice": 50400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-4060-81110",
+          "merchantSku": "t833-md-zg-4060-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 40-60 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 48100,
+          "standardPrice": 22900,
+          "displayPrice": 48100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-81100-81110",
+          "merchantSku": "t833-dk-zg-81100-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 81-100 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 49600,
+          "standardPrice": 23600,
+          "displayPrice": 49600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-121140-0050",
+          "merchantSku": "t833-dk-zg-121140-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 121-140 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 48100,
+          "standardPrice": 22900,
+          "displayPrice": 48100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-81100-111150",
+          "merchantSku": "t833-md-zg-81100-111150",
+          "label": "穴あけ不要タイプ / 遮光生地 / 81-100 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 58600,
+          "standardPrice": 27900,
+          "displayPrice": 58600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-4060-151180",
+          "merchantSku": "t833-dk-zg-4060-151180",
+          "label": "ネジ固定タイプ / 遮光生地 / 40-60 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 47500,
+          "standardPrice": 22600,
+          "displayPrice": 47500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-6180-0050",
+          "merchantSku": "t833-md-zg-6180-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 61-80 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 47100,
+          "standardPrice": 22400,
+          "displayPrice": 47100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-6180-81110",
+          "merchantSku": "t833-dk-zg-6180-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 61-80 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 46000,
+          "standardPrice": 21900,
+          "displayPrice": 46000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-4060-0050",
+          "merchantSku": "t833-dk-zg-4060-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 40-60 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 26900,
+          "standardPrice": 12800,
+          "displayPrice": 26900,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-121140-5180",
+          "merchantSku": "t833-dk-zg-121140-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 121-140 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 53200,
+          "standardPrice": 25300,
+          "displayPrice": 53200,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-81100-151180",
+          "merchantSku": "t833-dk-zg-81100-151180",
+          "label": "ネジ固定タイプ / 遮光生地 / 81-100 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 57800,
+          "standardPrice": 27500,
+          "displayPrice": 57800,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-141160-81110",
+          "merchantSku": "t833-dk-zg-141160-81110",
+          "label": "ネジ固定タイプ / 遮光生地 / 141-160 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 63000,
+          "standardPrice": 30000,
+          "displayPrice": 63000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-4060-5180",
+          "merchantSku": "t833-dk-zg-4060-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 40-60 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 42700,
+          "standardPrice": 20300,
+          "displayPrice": 42700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-81100-111150",
+          "merchantSku": "t833-dk-zg-81100-111150",
+          "label": "ネジ固定タイプ / 遮光生地 / 81-100 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 54200,
+          "standardPrice": 25800,
+          "displayPrice": 54200,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-4060-111150",
+          "merchantSku": "t833-dk-zg-4060-111150",
+          "label": "ネジ固定タイプ / 遮光生地 / 40-60 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 45400,
+          "standardPrice": 21600,
+          "displayPrice": 45400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-101120-151180",
+          "merchantSku": "t833-dk-zg-101120-151180",
+          "label": "ネジ固定タイプ / 遮光生地 / 101-120 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 64500,
+          "standardPrice": 30700,
+          "displayPrice": 64500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-6180-5180",
+          "merchantSku": "t833-dk-zg-6180-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 61-80 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 43700,
+          "standardPrice": 20800,
+          "displayPrice": 43700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-121140-5180",
+          "merchantSku": "t833-md-zg-121140-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 121-140 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 57600,
+          "standardPrice": 27400,
+          "displayPrice": 57600,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-6180-81110",
+          "merchantSku": "t833-md-zg-6180-81110",
+          "label": "穴あけ不要タイプ / 遮光生地 / 61-80 / 81-110",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 50400,
+          "standardPrice": 24000,
+          "displayPrice": 50400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-121140-0050",
+          "merchantSku": "t833-md-zg-121140-0050",
+          "label": "穴あけ不要タイプ / 遮光生地 / 121-140 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 52500,
+          "standardPrice": 25000,
+          "displayPrice": 52500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-6180-5180",
+          "merchantSku": "t833-md-zg-6180-5180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 61-80 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 48100,
+          "standardPrice": 22900,
+          "displayPrice": 48100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-101120-0050",
+          "merchantSku": "t833-dk-zg-101120-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 101-120 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 46000,
+          "standardPrice": 21900,
+          "displayPrice": 46000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-6180-0050",
+          "merchantSku": "t833-dk-zg-6180-0050",
+          "label": "ネジ固定タイプ / 遮光生地 / 61-80 / 0-50",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 42700,
+          "standardPrice": 20300,
+          "displayPrice": 42700,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-dk-zg-101120-5180",
+          "merchantSku": "t833-dk-zg-101120-5180",
+          "label": "ネジ固定タイプ / 遮光生地 / 101-120 / 51-80",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 50400,
+          "standardPrice": 24000,
+          "displayPrice": 50400,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-121140-111150",
+          "merchantSku": "t833-md-zg-121140-111150",
+          "label": "穴あけ不要タイプ / 遮光生地 / 121-140 / 111-150",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 69100,
+          "standardPrice": 32900,
+          "displayPrice": 69100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t833-md-zg-4060-151180",
+          "merchantSku": "t833-md-zg-4060-151180",
+          "label": "穴あけ不要タイプ / 遮光生地 / 40-60 / 151-180",
+          "image": "assets/images/products/d9b3a74eb771b3f7a79d.jpg",
+          "price": 51900,
+          "standardPrice": 24700,
+          "displayPrice": 51900,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "t833-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "60 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥26,900〜¥71,000"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥12,800〜¥33,800"
+        },
+        {
+          "label": "商品番号",
+          "value": "t833-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "205678"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t833-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "x02-a01",
+      "managementNumber": "x02-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【満充電で端子が離れる・安心】満充電自動分離アダプター 物理分離 通電停止 スマホ用 温度制御IC 充電データ表示 過電流保護 難燃性PC素材 過電圧保護 電力表示 機器別モード コンパクト 56×44×21mm 満充電検知 家庭用 Type-C充電保護アダプター",
+      "tagline": "【つなぎっぱなしを抑える・堅実】夜間充電に活躍 数値確認を手軽に 目で追える安心感 出力状態を確認 充電情報表示器 見える充電管理 デジタル画面付き 充電完了を把握 数値が見やすい",
+      "price": 4980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電アクセサリー",
+      "orderPath": "#product=x02-a01",
+      "whiteBgImage": "assets/images/products/a5eb9189a4d17b70407c.jpg",
+      "mainImage": "assets/images/products/fd7fc33baab16afb00b6.jpg",
+      "images": [
+        "assets/images/products/fd7fc33baab16afb00b6.jpg",
+        "assets/images/products/d4d20b4d7419c9e0353d.jpg",
+        "assets/images/products/82fd4b0e1e4967e4800d.jpg",
+        "assets/images/products/7382c8735d50b6b38891.jpg",
+        "assets/images/products/c5141482f92df8279e94.jpg",
+        "assets/images/products/a2688ebc32cf648a2028.jpg",
+        "assets/images/products/57d796f9a9f4c46a251b.jpg",
+        "assets/images/products/f95bee313545726d1747.jpg",
+        "assets/images/products/211bb1efac0e0e3bf0fc.jpg",
+        "assets/images/products/ccfb1a22ddd66ed274ed.jpg",
+        "assets/images/products/b9f2d6742a71de5484a1.jpg",
+        "assets/images/products/29994d50a35520689e00.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "x02-black",
+          "merchantSku": "x02-black",
+          "label": "ブラック",
+          "image": "assets/images/products/8d535c7c43f04ba5adee.jpg",
+          "price": 4980,
+          "standardPrice": 2180,
+          "displayPrice": 4980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "x02-silver",
+          "merchantSku": "x02-silver",
+          "label": "シルバー",
+          "image": "assets/images/products/a5eb9189a4d17b70407c.jpg",
+          "price": 4980,
+          "standardPrice": 2180,
+          "displayPrice": 4980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "x02-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "2 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥4,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥2,180"
+        },
+        {
+          "label": "商品番号",
+          "value": "x02-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "509434"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/x02-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "x007-a01",
+      "managementNumber": "x007-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【スマホをもっと自由に持ち歩く】スマホショルダー スマホストラップ ストラップホルダー タグクリップ付き レザー調 肩掛け 斜め掛け 首掛け 2WAY 長さ調節可能 落下防止 おしゃれ iPhone Android対応 長さ調節可能 おしゃれ スマホケース用 肩掛け",
+      "tagline": "スマホショルダーストラップ タグクリップ付き スマホストラップ 肩掛け 斜め掛け 長さ調節可能 レザー調 おしゃれ 大人かわいい 落下防止 スマホケース用 iPhone Android対応 送料無料",
+      "price": 3980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "スマホストラップ",
+      "orderPath": "#product=x007-a01",
+      "whiteBgImage": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+      "mainImage": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+      "images": [
+        "assets/images/products/d18a6543b7e5559ecb46.jpg",
+        "assets/images/products/3a23a7583901f215b715.jpg",
+        "assets/images/products/1c5c73d855dd57b42816.jpg",
+        "assets/images/products/0d90a8a6c9430ad7d294.jpg",
+        "assets/images/products/4781e0b364098e683599.jpg",
+        "assets/images/products/97b868d5ef94ef725543.jpg",
+        "assets/images/products/0068004933d98e1eb193.jpg",
+        "assets/images/products/33bf0eed901b75d3e9f8.jpg",
+        "assets/images/products/a009f42f0b084d4b9c5e.jpg",
+        "assets/images/products/397bb8742f92c8105e8b.jpg",
+        "assets/images/products/a792c6cfadcbbf9b0a81.jpg",
+        "assets/images/products/6ca692136c9933e2a12e.jpg",
+        "assets/images/products/410fd6ffe580dfbffab5.jpg",
+        "assets/images/products/7d454e234ab8d886d2e3.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "x007-pinksand",
+          "merchantSku": "x007-pinksand",
+          "label": "ピンクサンド",
+          "image": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+          "price": 3980,
+          "standardPrice": 1380,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "x007-black",
+          "merchantSku": "x007-black",
+          "label": "ブラック",
+          "image": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+          "price": 3980,
+          "standardPrice": 1380,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "x007-mocha",
+          "merchantSku": "x007-mocha",
+          "label": "モカ",
+          "image": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+          "price": 3980,
+          "standardPrice": 1380,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "x007-etoupe",
+          "merchantSku": "x007-etoupe",
+          "label": "エトープ",
+          "image": "assets/images/products/d18a6543b7e5559ecb46.jpg",
+          "price": 3980,
+          "standardPrice": 1380,
+          "displayPrice": 3980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "x007-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "4 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥3,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,380"
+        },
+        {
+          "label": "商品番号",
+          "value": "x007-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "110365"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/x007-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "y319-a01",
+      "managementNumber": "y319-a01",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【周囲を汚しにくい、作業面を守る】レンジフード掃除用品 延長ストラップ 長さ調整 清掃作業用 吸盤式固定 取り付け簡単 吊り紐を調節 汚水受け 排水ホース 排水方向を調整 換気扇掃除 水はね対策 洗って繰り返す しぶき対策 レンジフード掃除カバー",
+      "tagline": "【壁や床への飛散に配慮、水はね対策】たまり水の処理を簡潔に 汚水導水レンジフードクリーニングシート 水運びの手間を抑える 排水ホースで水を移動 汚水回収型レンジフード掃除シート",
+      "price": 3580,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "掃除用品",
+      "orderPath": "#product=y319-a01",
+      "whiteBgImage": "assets/images/products/8eaab80e80649e9bba5d.jpg",
+      "mainImage": "assets/images/products/8eaab80e80649e9bba5d.jpg",
+      "images": [
+        "assets/images/products/8eaab80e80649e9bba5d.jpg",
+        "assets/images/products/1ce2f6e1d022d623cc38.jpg",
+        "assets/images/products/95cbf3bc4fe238ffa8c9.jpg",
+        "assets/images/products/11ddc12d202a7b9b3df8.jpg",
+        "assets/images/products/5abab89999017e51dbf6.jpg",
+        "assets/images/products/57bad4f8dc5a34b3fe56.jpg",
+        "assets/images/products/cd1eeee1caef70e17875.jpg",
+        "assets/images/products/3f51db31eb1b898edb93.jpg",
+        "assets/images/products/97a5f67a96cb883d5dd7.jpg",
+        "assets/images/products/211bc423d91143a3f083.jpg",
+        "assets/images/products/2d6fcd93af6415f5a75c.jpg",
+        "assets/images/products/cd70182ec3ab910239a8.jpg",
+        "assets/images/products/9faa8b51f9f56bbda6fa.jpg",
+        "assets/images/products/0d1d591bb977fbc047ac.jpg",
+        "assets/images/products/29f32e24ee1e11548144.jpg",
+        "assets/images/products/73f2935cf7836dfa422b.jpg",
+        "assets/images/products/3b7bc832f2ca6550c62c.jpg",
+        "assets/images/products/acef233c5688b24dd76a.jpg",
+        "assets/images/products/bdd078f0d09558978dfe.jpg",
+        "assets/images/products/cb39f171fc5c475987c1.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "y319-blue",
+          "merchantSku": "y319-blue",
+          "label": "ブルー",
+          "image": "assets/images/products/8eaab80e80649e9bba5d.jpg",
+          "price": 3580,
+          "standardPrice": 1680,
+          "displayPrice": 3580,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "y319-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥3,580"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,680"
+        },
+        {
+          "label": "商品番号",
+          "value": "y319-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "101836"
+        }
+      ],
+      "source": {
+        "type": "rakuten_item_page_json",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/y319-a01/",
+        "fetchedAt": "2026-08-17T08:35:59.842Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
       }
     }
   ]
