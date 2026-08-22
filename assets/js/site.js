@@ -20,8 +20,8 @@ const checkoutForm = document.querySelector("[data-checkout-form]");
 const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const productsSection = document.getElementById("products");
-const VARIANT_CHIP_LIMIT = 36;
-const PRODUCTS_DATA_VERSION = "2026081701";
+const VARIANT_CHIP_LIMIT = 8;
+const PRODUCTS_DATA_VERSION = "2026082201";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
@@ -100,9 +100,15 @@ const getDisplayImage = (src = "") => getLocalProductDerivative(src, "medium") |
 
 const getThumbImage = (src = "") => getLocalProductDerivative(src, "thumbs") || getSizedImage(src, 300) || src;
 
-const getCurrentUnitPrice = () => getSelectedVariant()?.price || activeProduct?.price || 0;
+const getCurrentUnitPrice = () =>
+  getSelectedVariant()?.displayPrice || getSelectedVariant()?.price || activeProduct?.price || 0;
 
-const variantDisplayLabel = (variant = {}) => variant.label || variant.merchantSku || variant.sku || "SKU";
+const variantDisplayLabel = (variant = {}) =>
+  (variant.label || variant.merchantSku || variant.sku || "SKU")
+    .replace(/[（(]\s*1個当たり\s*[\d,]+円\s*[）)]/g, "")
+    .replace(/[¥￥]\s*[\d,]+(?:円)?/g, "")
+    .replace(/\s{2,}/g, " ")
+    .trim();
 
 const updateCatalogVisibility = (scrollToCatalog = false) => {
   const isCatalogRoute = location.hash === "#products" || location.hash.startsWith("#product=");

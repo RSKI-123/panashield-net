@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T08:36:52.949Z",
-  "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache_plus_lukurasu_item_page_json",
+  "updatedAt": "2026-08-22T03:26:04.379Z",
+  "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache_plus_lukurasu_item_page_json_plus_rms_representative_items",
   "products": [
     {
       "id": "m22-a01",
@@ -134325,6 +134325,309 @@
         "fetchedAt": "2026-08-17T08:35:59.842Z",
         "priceField": "表示価格",
         "note": "Imported from Rakuten Lukurasu item-page-app-data JSON; website and SKU prices use referencePrice.value as 表示価格."
+      }
+    },
+    {
+      "id": "k66s-a01",
+      "managementNumber": "k66s-a01",
+      "storeCode": "auc-risukai",
+      "storeName": "RISUKAI",
+      "name": "限定1点1980円・2点目半額★iPhone 17e 充電器 PD充電器 40W シリコン 急速充電 type-c 充電器 スマホ 充電器 折りたたみ式 iPhone 17/16/15 ケーブル iphone 1.5m タイプ c ケーブル 充電 ACアダプタ アイホン type-c MacBook 充電器 iPhone 充電器",
+      "tagline": "★MacBook Neo・対応★type-c ケーブル 1.5m 240w iphone PD充電器 急速 type-C usb ケーブル 急速充電器 iPhone17 pro ベルト付き 断線に強い 高速データ 充電器 軽量 スマホ コンセント",
+      "price": 5480,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電器・ケーブル",
+      "orderPath": "#product=k66s-a01",
+      "whiteBgImage": "assets/images/products/09ce10342b12b46dd81e.jpg",
+      "mainImage": "assets/images/products/09ce10342b12b46dd81e.jpg",
+      "images": [
+        "assets/images/products/09ce10342b12b46dd81e.jpg",
+        "assets/images/products/9c92f58040e08a17bcef.jpg",
+        "assets/images/products/e382618f1622f3b7be8f.jpg",
+        "assets/images/products/d909e53016bf271a2ac3.jpg",
+        "assets/images/products/57420c1c377f8662a5f9.jpg",
+        "assets/images/products/e5224630e3c1b7ac87f3.jpg",
+        "assets/images/products/4db8ab28b25efc83d185.jpg",
+        "assets/images/products/31d5e0d63baedc6c3d2f.jpg",
+        "assets/images/products/6e75d96d5de77e3263d1.jpg",
+        "assets/images/products/f668400e3d997a5a0011.jpg",
+        "assets/images/products/4a1d39def523c367fbb4.jpg",
+        "assets/images/products/730f9615857938ce7a09.jpg",
+        "assets/images/products/25192ea86a4ae19a5272.jpg",
+        "assets/images/products/5612d95ef84c4bc4298a.jpg",
+        "assets/images/products/c3a716734b049d436b26.jpg",
+        "assets/images/products/123351b2af959606fec8.jpg",
+        "assets/images/products/1de07fca10bd5e5e088e.jpg",
+        "assets/images/products/74795427f195292169e6.jpg",
+        "assets/images/products/d39c3bfd5343c67762c6.jpg",
+        "assets/images/products/b56cfdb2941bd1d6a222.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "k66s-white",
+          "merchantSku": "k66s-white",
+          "label": "充電器単品 / 充電器のみ（ケーブルなし）",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 5480,
+          "standardPrice": 1980,
+          "displayPrice": 5480,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-dawnpink",
+          "merchantSku": "k66s-white-t824-TC-TC-dawnpink",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / ドーンピンク",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-bluefog",
+          "merchantSku": "k66s-white-t824-TC-TC-bluefog",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / ブルーフォグ",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-seafoam",
+          "merchantSku": "k66s-white-t824-TC-TC-seafoam",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / シーフォーム",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-greige",
+          "merchantSku": "k66s-white-t824-TC-TC-greige",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / グレージュ",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-white",
+          "merchantSku": "k66s-white-t824-TC-TC-white",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / ホワイト",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-TC-black",
+          "merchantSku": "k66s-white-t824-TC-TC-black",
+          "label": "充電器＆ケーブルセット / Type-C to Type-C / ブラック",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-dawnpink",
+          "merchantSku": "k66s-white-t824-TC-LN-dawnpink",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / ドーンピンク",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-bluefog",
+          "merchantSku": "k66s-white-t824-TC-LN-bluefog",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / ブルーフォグ",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-seafoam",
+          "merchantSku": "k66s-white-t824-TC-LN-seafoam",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / シーフォーム",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-greige",
+          "merchantSku": "k66s-white-t824-TC-LN-greige",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / グレージュ",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-white",
+          "merchantSku": "k66s-white-t824-TC-LN-white",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / ホワイト",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "k66s-white-t824-TC-LN-black",
+          "merchantSku": "k66s-white-t824-TC-LN-black",
+          "label": "充電器＆ケーブルセット / Type-C to Lightning / ブラック",
+          "image": "assets/images/products/09ce10342b12b46dd81e.jpg",
+          "price": 6500,
+          "standardPrice": 2380,
+          "displayPrice": 6500,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "k66s-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "13 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥5,480〜¥6,500"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,980〜¥2,380"
+        },
+        {
+          "label": "商品番号",
+          "value": "k66s-a01"
+        },
+        {
+          "label": "店舗",
+          "value": "RISUKAI"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "509434"
+        }
+      ],
+      "source": {
+        "type": "rakuten_rms_item_edit_and_public_page",
+        "storeCode": "auc-risukai",
+        "storeName": "RISUKAI",
+        "productUrl": "https://item.rakuten.co.jp/auc-risukai/k66s-a01/",
+        "fetchedAt": "2026-08-22T03:26:04.379Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten RMS and public item page; website and SKU prices use RMS 表示価格, not 通常購入販売価格."
+      }
+    },
+    {
+      "id": "fd-summer-a01",
+      "managementNumber": "fd-summer-a01",
+      "storeCode": "syd-shop",
+      "storeName": "SYD SHOP",
+      "name": "【夏の福袋・数量限定】福袋 ギフト ハッピーバッグ お楽しみ袋 レディース福袋 ランダム 冷却グッズ ネッククーラー おしゃれ 3D マスク 大人 花火大会 祭り ハンディファン 扇風機 30W 急速充電器 65W Type-C充電器 MacBook Neo対応 防水 ケース ストラップ ケース 運試し",
+      "tagline": "★最短当日出荷★お得な福袋セット 驚きのコスパ＆多用途アイテム満載！豪華福袋！実用的なアイテムが盛りだくさん、毎日がもっと楽しくなるサプライズをお届け！ Happy Bag 送料無料",
+      "price": 5000,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "福袋",
+      "orderPath": "#product=fd-summer-a01",
+      "whiteBgImage": "assets/images/products/8b620110217a30cdfacb.jpg",
+      "mainImage": "assets/images/products/8b620110217a30cdfacb.jpg",
+      "images": [
+        "assets/images/products/8b620110217a30cdfacb.jpg",
+        "assets/images/products/fdb35938045589536cd9.jpg",
+        "assets/images/products/9d4ae3b0be43c46cdba7.jpg",
+        "assets/images/products/6054f57eedcb560efef1.jpg",
+        "assets/images/products/6c95d714b6e17130dc7f.jpg",
+        "assets/images/products/cdb2afaa6c30a9c22cff.jpg",
+        "assets/images/products/49f22ac0e9e393000102.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "fd-summer-A",
+          "merchantSku": "fd-summer-A",
+          "label": "A 涼風福袋",
+          "image": "assets/images/products/8b620110217a30cdfacb.jpg",
+          "price": 5000,
+          "standardPrice": 1480,
+          "displayPrice": 5000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "fd-summer-B",
+          "merchantSku": "fd-summer-B",
+          "label": "B 夏空福袋",
+          "image": "assets/images/products/8b620110217a30cdfacb.jpg",
+          "price": 10000,
+          "standardPrice": 4980,
+          "displayPrice": 10000,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "fd-summer-C",
+          "merchantSku": "fd-summer-C",
+          "label": "C 花火福袋",
+          "image": "assets/images/products/8b620110217a30cdfacb.jpg",
+          "price": 30000,
+          "standardPrice": 6980,
+          "displayPrice": 30000,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "fd-summer-a01"
+        },
+        {
+          "label": "SKU数",
+          "value": "3 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥5,000〜¥30,000"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥1,480〜¥6,980"
+        },
+        {
+          "label": "商品番号",
+          "value": "luckybag-summer"
+        },
+        {
+          "label": "店舗",
+          "value": "SYD SHOP"
+        },
+        {
+          "label": "Rakutenカテゴリ",
+          "value": "402792"
+        }
+      ],
+      "source": {
+        "type": "rakuten_rms_item_edit_and_public_page",
+        "storeCode": "syd-shop",
+        "storeName": "SYD SHOP",
+        "productUrl": "https://item.rakuten.co.jp/syd-shop/fd-summer-a01/",
+        "fetchedAt": "2026-08-22T03:26:04.379Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten RMS and public item page; website and SKU prices use RMS 表示価格, not 通常購入販売価格."
       }
     }
   ]
