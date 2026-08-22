@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T03:26:04.379Z",
+  "updatedAt": "2026-08-22T07:21:55.090Z",
   "source": "9shop_normal_item_csv_plus_gemini_rakuten_cache_plus_lukurasu_item_page_json_plus_rms_representative_items",
   "products": [
     {
@@ -134626,6 +134626,204 @@
         "storeName": "SYD SHOP",
         "productUrl": "https://item.rakuten.co.jp/syd-shop/fd-summer-a01/",
         "fetchedAt": "2026-08-22T03:26:04.379Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten RMS and public item page; website and SKU prices use RMS 表示価格, not 通常購入販売価格."
+      }
+    },
+    {
+      "id": "x-t711-06",
+      "managementNumber": "x-t711-06",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "【見た目抜群の加湿器！】卓上加湿器 おしゃれ 静音 オフィス 家庭用 蒸気式 かわいい デザイン USB充電 湿度設定 水分補給 次亜塩素酸水対応 車載加湿器 室内空気調整 空焚き防止 空気清浄機能 夜間使用 静かな運転 持ち運び 手入れ簡単 アロマ機能 空気清浄 アート 加湿機",
+      "tagline": "秋冬乾燥対策 UVライト付き スタイリッシュ 高級感 目を引く 音が静か 大容量 衛生 自動湿度調節 環境改善 快適な湿度 フレッシュな空気 ポータブル ナイトライト機能 安全認証 送料無料",
+      "price": 7050,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "加湿器",
+      "orderPath": "#product=x-t711-06",
+      "whiteBgImage": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+      "mainImage": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+      "images": [
+        "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+        "assets/images/products/74afef973d0e0437aa08.jpg",
+        "assets/images/products/12fa124e7bd047b8e329.jpg",
+        "assets/images/products/c13d96b87a46b34d0170.jpg",
+        "assets/images/products/fd3028d23449f733ff5f.jpg",
+        "assets/images/products/5170186cb86931a89099.jpg",
+        "assets/images/products/8691c91479f2d28623bd.jpg",
+        "assets/images/products/4b89ed91bbb0ba8bf953.jpg",
+        "assets/images/products/c7d220b8fdbfbfd525c4.jpg",
+        "assets/images/products/390e754d5db98ea3a585.jpg",
+        "assets/images/products/0c5e74c877323b62400c.jpg",
+        "assets/images/products/b1eed0fb73755db9dff5.jpg",
+        "assets/images/products/eb62bb973bae695ccb88.jpg",
+        "assets/images/products/e42552843901f8705abf.jpg",
+        "assets/images/products/9ad4bd49deb92b18a024.jpg",
+        "assets/images/products/0b1c95aab78b611a88b2.jpg",
+        "assets/images/products/80412f542b762dfd023a.jpg",
+        "assets/images/products/f8360a3b4ec917b1abd0.jpg",
+        "assets/images/products/49729687bcb02e0bfb40.jpg",
+        "assets/images/products/65bdbd6926df4910bde1.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "t711--",
+          "merchantSku": "t711--",
+          "label": "自分用1個セット",
+          "image": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+          "price": 7050,
+          "standardPrice": 2280,
+          "displayPrice": 7050,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t711-2set",
+          "merchantSku": "t711-2set",
+          "label": "共有2個セット",
+          "image": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+          "price": 14100,
+          "standardPrice": 3999,
+          "displayPrice": 14100,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t711-3set",
+          "merchantSku": "t711-3set",
+          "label": "家族用3個セット",
+          "image": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+          "price": 21150,
+          "standardPrice": 5499,
+          "displayPrice": 21150,
+          "availability": "在庫あり"
+        },
+        {
+          "sku": "t711-4set",
+          "merchantSku": "t711-4set",
+          "label": "法人専用4個セット",
+          "image": "assets/images/products/9eb5c75a5bf2486aa264.jpg",
+          "price": 28200,
+          "standardPrice": 6799,
+          "displayPrice": 28200,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "x-t711-06"
+        },
+        {
+          "label": "SKU数",
+          "value": "4 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥7,050〜¥28,200"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥2,280〜¥6,799"
+        },
+        {
+          "label": "商品番号",
+          "value": "x-t711-06"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        }
+      ],
+      "source": {
+        "type": "rakuten_rms_item_edit_and_public_page",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/x-t711-06/",
+        "fetchedAt": "2026-08-22T07:21:55.090Z",
+        "priceField": "表示価格",
+        "note": "Imported from Rakuten RMS and public item page; website and SKU prices use RMS 表示価格, not 通常購入販売価格."
+      }
+    },
+    {
+      "id": "t824-a02",
+      "managementNumber": "t824-a02",
+      "storeCode": "lukurasu",
+      "storeName": "ルクラス",
+      "name": "2本目半額★発熱を抑えて長持ち★iPhone17 充電ケーブル スマホ 充電ケーブル iPhone 充電ケーブル 240W 亜鉛合金＆シリコン素材 急速充電 データ転送対応 ライトニングケーブル type-c/Lighting ケーブル iPhone 充電 コード Android 充電ケーブル iPhone 17 e MacBook Neo",
+      "tagline": "★高耐久ケーブルで長く使える★iPhone/MacBook/iPad/Android 対応 iPhone17/16/15/14 インテリジェントチップ 温度制御 過熱防止 絡まらない 超柔軟 高耐久 アイフォンケーブル 送料無料",
+      "price": 2980,
+      "currency": "JPY",
+      "availability": "在庫あり",
+      "category": "充電器・ケーブル",
+      "orderPath": "#product=t824-a02",
+      "whiteBgImage": "assets/images/products/8011268dc0c9fa851317.jpg",
+      "mainImage": "assets/images/products/8011268dc0c9fa851317.jpg",
+      "images": [
+        "assets/images/products/8011268dc0c9fa851317.jpg",
+        "assets/images/products/18233872885616edb82b.jpg",
+        "assets/images/products/453e62bdb32f4a6d239e.jpg",
+        "assets/images/products/08b39d1fe89e3a3e9bfe.jpg",
+        "assets/images/products/0455be0ad1660b497430.jpg",
+        "assets/images/products/4c276b443dfa9a90b8bb.jpg",
+        "assets/images/products/a9d7bee3eae1199fee99.jpg",
+        "assets/images/products/81525d94107a0680cae7.jpg",
+        "assets/images/products/f7c9ff4ffedf2734b335.jpg",
+        "assets/images/products/184fa56f4e4e92a505fa.jpg",
+        "assets/images/products/7ab717b0d8138235542f.jpg",
+        "assets/images/products/06abc0e81587bcf67795.jpg",
+        "assets/images/products/01d86e99cc80a408c58e.jpg",
+        "assets/images/products/032176ab4aea949fa0ee.jpg",
+        "assets/images/products/7efb7ecfb42c300d5076.jpg",
+        "assets/images/products/3a231a79e952fde0198b.jpg",
+        "assets/images/products/c20f3566219d0663b5bb.jpg",
+        "assets/images/products/aa46b37738ba48459e9a.jpg",
+        "assets/images/products/62fcbcd66322ed1aa552.jpg",
+        "assets/images/products/d2dee5cda14629855b5a.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "single-sku",
+          "merchantSku": "single-sku",
+          "label": "ケーブル単品",
+          "image": "assets/images/products/8011268dc0c9fa851317.jpg",
+          "price": 2980,
+          "standardPrice": 981,
+          "displayPrice": 2980,
+          "availability": "在庫あり"
+        }
+      ],
+      "specs": [
+        {
+          "label": "管理番号",
+          "value": "t824-a02"
+        },
+        {
+          "label": "SKU数",
+          "value": "1 種"
+        },
+        {
+          "label": "表示価格",
+          "value": "¥2,980"
+        },
+        {
+          "label": "通常購入販売価格",
+          "value": "¥981"
+        },
+        {
+          "label": "商品番号",
+          "value": "t824-a02"
+        },
+        {
+          "label": "店舗",
+          "value": "ルクラス"
+        }
+      ],
+      "source": {
+        "type": "rakuten_rms_item_edit_and_public_page",
+        "storeCode": "lukurasu",
+        "storeName": "ルクラス",
+        "productUrl": "https://item.rakuten.co.jp/lukurasu/t824-a02/",
+        "fetchedAt": "2026-08-22T07:21:55.090Z",
         "priceField": "表示価格",
         "note": "Imported from Rakuten RMS and public item page; website and SKU prices use RMS 表示価格, not 通常購入販売価格."
       }

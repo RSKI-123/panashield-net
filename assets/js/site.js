@@ -21,7 +21,7 @@ const checkoutSummary = document.querySelector("[data-checkout-summary]");
 const checkoutStatus = document.querySelector("[data-checkout-status]");
 const productsSection = document.getElementById("products");
 const VARIANT_CHIP_LIMIT = 8;
-const PRODUCTS_DATA_VERSION = "2026082201";
+const PRODUCTS_DATA_VERSION = "2026082202";
 const PRODUCTS_DATA_URL = `assets/data/products.json?v=${PRODUCTS_DATA_VERSION}`;
 
 const currencyFormatter = new Intl.NumberFormat("ja-JP", {
